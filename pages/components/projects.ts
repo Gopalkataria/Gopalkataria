@@ -20,13 +20,13 @@ export const MainProjects : Project[] = [
     {
         pid: 2,
         title: " Physiczard ",
-        description: " An old-school game revisited where physics is intentionally made weird. Don't take it easy, it is harder than you think ! ",
+        description: " An old-school game revisited where physics is intentionally made weird. Don't take it easy, it is harder than you think! ",
         link: "https://gopalkataria.github.io/bouncy-game/",
     },
     {
         pid: 3,
         title: " Cryptography Algorithms ",
-        description: "Python Algorithm to encrypt/decrypt text using numerical keys text is encrypted multiple times with different techniques depending on no. of digits in the keys",
+        description: "Python Algorithm to encrypt/decrypt text using numerical keys text is encrypted multiple times with different techniques depending on no. of digits in the keys.",
         link: "https://github.com/Gopalkataria/Cryptography"
     }
 ];

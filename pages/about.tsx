@@ -1,6 +1,10 @@
-
-import { Section, Interest, ProjectCard, Project } from "./components/components";
-import { MainProjects } from "./components/projects"
+import {
+	Section,
+	Interest,
+	ProjectCard,
+	Project,
+} from "./components/components";
+import { MainProjects } from "./components/projects";
 import Head from "next/head";
 
 function About() {
@@ -8,7 +12,7 @@ function About() {
 		<div>
 			<Head>
 				<title>Gopal Kataria</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/G.svg" type="image/svg+xml" />
 
 				{/* Firebase  Scripts over here  */}
 				<script src="/__/firebase/7.15.5/firebase-app.js"></script>
@@ -17,10 +21,17 @@ function About() {
 
 				<script src="/__/firebase/init.js"></script>
 				<link rel="stylesheet" href="/bootstrap/css/bootstrap.css"></link>
+				<style>
+					{`
+					html {
+						scroll-behavior: smooth;
+					}
+					`}
+				</style>
 			</Head>
 			<div className="container ">
 				<div className="row d-flex justify-content-center m-4 bg-light">
-					<div className="col-sm-4 mx-auto px-auto ">
+					<div className="col-sm-4 mx-auto px-auto my-2 py-2 ">
 						<img
 							src="/avatar.jpg"
 							alt="One of the Gopal's best pictures"
@@ -30,6 +41,7 @@ function About() {
 					<div className="col-sm-8 text-center">
 						<h1 className="  display-4">Gopal Kataria</h1>
 						<h4 className="text-muted ">High school student</h4>
+						<h4 className="text-muted ">Born in 2004</h4>
 					</div>
 				</div>
 
@@ -43,12 +55,15 @@ function About() {
 					<br />
 					<br />
 					<strong className="px-1">
-						Feel free to contact me if you any ideas which you think I can bring
-						to reality.
+						Feel free to
+						<a href="#contact-me" className="text-primary px-1">
+							contact me
+						</a>
+						if you any ideas which you think I can bring to reality.
 					</strong>
-					I have a good experience with front-end languages ( HTML, CSS,
-					Javascript ) and frameworks ( React , Next.js, Bootstrap, Ionic ) along with
-					great knowledge of Python.
+					I have a good experience with front-end languages (HTML, CSS,
+					Javascript) and frameworks (React, Next.js, Bootstrap, Ionic) along
+					with great knowledge of Python.
 				</Section>
 
 				<div>
@@ -71,33 +86,40 @@ function About() {
 
 				<Section title="Achievements">
 					<ul>
-						<li>Participated in Google's kickstart competition.</li>
-						<li>Scored 8.0 Band in IELTS academic test</li>
-						<li>An active member of Hack Club community</li>
+						<li>
+							Participated in Google's kickstart competition. Solved numerous
+							algorithmic problems for the same.
+						</li>
+						<li>Scored 8.0 Band in IELTS academic test at the age of 16. </li>
+						<li>An active member of Hack Club community.</li>
 						<li>
 							Represented the school in various inter-school competitions.
 						</li>
 						<li>
 							Participated in various stage activities in school (Debates,
-							Quizzes, and compèring )
+							Quizzes, and compèring ).
+						</li>
+						<li>
+							Secured 188th position out of 3,000 participants in Global Citizen
+							Scholarship entrance exam.
 						</li>
 					</ul>
 				</Section>
 
 				<Section title="Interests ">
-					<Interest title=" PWA's ">
+					<Interest title="Building PWA's ">
 						While building websites, turning them into Progressive Web Apps
 						(PWA's) makes them a lot faster, reliable and engaging. You can
 						check some PWA's I've built in my projects section.
 					</Interest>
 
-					<Interest title=" Algorithms ">
+					<Interest title=" Solving algorithmic problems ">
 						Hard programming problems are intrinsically fun to tackle. My main
 						focus is to come up with creative solutions to rather mundane
 						problems. These patterns can be found everywhere in my code.
 					</Interest>
 
-					<Interest title=" Teach Enthusiast ">
+					<Interest title=" Tech Enthusiast ">
 						I constantly keep myself updated with upcoming developments in the
 						tech industry. This has made me the de-facto person to reach out for
 						any Tech related advice and assistance amongst my friends and family
@@ -106,22 +128,21 @@ function About() {
 				</Section>
 
 				<Section title="Contact me ">
-					<ul className="list-group ">
-						Either personal message me on my social media accounts or send an Email. I will surely get back to you within 48 hours.
+					<ul className="list-group " id="contact-me">
+						Either personal message me on my social media accounts or send an
+						Email. I will surely get back to you within 48 hours.
 						<li className="list-group-item text-primary">
 							<a href="https://twitter.com/gopal_kataria_" target="_blank">
-								Twitter ( @gopal_kataria_ )
+								Twitter @gopal_kataria_
 							</a>
 						</li>
 						<li className="list-group-item text-primary">
 							<a href="https://www.instagram.com/iam_gopalk/" target="_blank">
-								Instagram ( @iam_gopalk )
+								Instagram @iam_gopalk
 							</a>
 						</li>
-						<li className="list-group-item text-primary "  >
-
-								Email: gopalkataria@yahoo.com
-
+						<li className="list-group-item text-primary ">
+							Email: gopalkataria@yahoo.com
 						</li>
 					</ul>
 				</Section>
@@ -154,6 +175,5 @@ function About() {
 		</div>
 	);
 }
-
 
 export default About;

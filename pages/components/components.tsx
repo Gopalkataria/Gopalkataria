@@ -31,13 +31,13 @@ export interface Project {
 
 export function ProjectCard(props: Project) {
 	return (
-		<div className="card col-sm-6 col-md-6 col-lg-5 m-2 p-2 w-18">
+		<div className="card col-sm-8 col-md-5 col-lg-5 m-2 p-2 w-18">
 			<div className="card-body">
 				<div className="card-title">{props.title}</div>
 				<div className="card-text">{props.description}</div>
 
 				<a href={props.link} target="_blank" className=" card-link ">
-					<strong> Show this 🥽 </strong>
+					<strong> See this 👀  </strong>
 				</a>
 			</div>
 		</div>
