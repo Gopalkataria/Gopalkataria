@@ -3,7 +3,7 @@ import { Section, Interest, ProjectCard, Project } from "./components/components
 import { MainProjects } from "./components/projects"
 import Head from "next/head";
 
-function App() {
+function About() {
 	return (
 		<div>
 			<Head>
@@ -16,12 +16,7 @@ function App() {
 				<script src="/__/firebase/7.15.5/firebase-analytics.js"></script>
 
 				<script src="/__/firebase/init.js"></script>
-				<link
-					rel="stylesheet"
-					href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-					integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-					crossorigin="anonymous"
-				></link>
+				<link rel="stylesheet" href="/bootstrap/css/bootstrap.css"></link>
 			</Head>
 			<div className="container ">
 				<div className="row d-flex justify-content-center m-4 bg-light">
@@ -40,17 +35,25 @@ function App() {
 
 				<Section title={" About Me "}>
 					<strong>
-						{" "}
-						I am a high school student and a self-taught programmer.{" "}
-					</strong>{" "}
+						I am a high school student and a self-taught programmer.
+					</strong>
 					While main my main focus is web development, I love trying my hand and
 					new languages, software and frameworks. My ultimate goal is to build
 					something transformative for the society using my programming skills.
+					<br />
+					<br />
+					<strong className="px-1">
+						Feel free to contact me if you any ideas which you think I can bring
+						to reality.
+					</strong>
+					I have a good experience with front-end languages ( HTML, CSS,
+					Javascript ) and frameworks ( React , Next.js, Bootstrap, Ionic ) along with
+					great knowledge of Python.
 				</Section>
 
 				<div>
 					<div className="row d-flex justify-content-left">
-						<h4 className="blockqoute mb-2 mt-5 col"> Reacent Projects </h4>
+						<h4 className="blockqoute mb-2 mt-5 col"> Recent Projects </h4>
 					</div>
 					<div className="row d-flex justify-content-center">
 						{MainProjects.map((project) => {
@@ -65,6 +68,21 @@ function App() {
 						})}
 					</div>
 				</div>
+
+				<Section title="Achievements">
+					<ul>
+						<li>Participated in Google's kickstart competition.</li>
+						<li>Scored 8.0 Band in IELTS academic test</li>
+						<li>An active member of Hack Club community</li>
+						<li>
+							Represented the school in various inter-school competitions.
+						</li>
+						<li>
+							Participated in various stage activities in school (Debates,
+							Quizzes, and compèring )
+						</li>
+					</ul>
+				</Section>
 
 				<Section title="Interests ">
 					<Interest title=" PWA's ">
@@ -88,8 +106,21 @@ function App() {
 				</Section>
 
 				<Section title="Contact me ">
-					<ul>
-						<li>
+					<ul className="list-group ">
+						Either personal message me on my social media accounts or send an Email. I will surely get back to you within 48 hours.
+						<li className="list-group-item text-primary">
+							<a href="https://twitter.com/gopal_kataria_" target="_blank">
+								Twitter ( @gopal_kataria_ )
+							</a>
+						</li>
+						<li className="list-group-item text-primary">
+							<a href="https://www.instagram.com/iam_gopalk/" target="_blank">
+								Instagram ( @iam_gopalk )
+							</a>
+						</li>
+						<li className="list-group-item text-primary "  >
+
+								Email: gopalkataria@yahoo.com
 
 						</li>
 					</ul>
@@ -98,14 +129,13 @@ function App() {
 				<footer className="row mt-5">
 					<div className="col-12 d-flex justify-content-center text-center">
 						<p>
-							Made with ❤ using{" "}
+							Made with ❤ using
 							<a
 								className="px-1 text-primary"
 								target="_blank"
 								href="https://nextjs.org/"
 							>
-								{" "}
-								Next.js{" "}
+								Next.js
 							</a>
 							and
 							<a
@@ -113,32 +143,17 @@ function App() {
 								target="_blank"
 								href="https://getbootstrap.com/"
 							>
-								{" "}
-								Bootstrap{" "}
+								Bootstrap
 							</a>
 						</p>
 					</div>
 				</footer>
 			</div>
 
-			<script
-				src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-				integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-				crossorigin="anonymous"
-			></script>
-			<script
-				src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-				integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-				crossorigin="anonymous"
-			></script>
-			<script
-				src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-				integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-				crossorigin="anonymous"
-			></script>
+			<script src="/bootstrap/js/bootstrap.js"></script>
 		</div>
 	);
 }
 
 
-export default App;
+export default About;
