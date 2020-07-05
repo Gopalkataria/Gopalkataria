@@ -21,8 +21,7 @@ export function Interest(props: any) {
 }
 
 export interface Project {
-	pid?: Number;
-	key?: String;
+	key: number;
 	title: string;
 	description: string;
 	link: string;
@@ -42,4 +41,9 @@ export function ProjectCard(props: Project) {
 			</div>
 		</div>
 	);
+}
+
+
+export default function NoEntry() {
+	return ( <h1> Access denied </h1>)
 }

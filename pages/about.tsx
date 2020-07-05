@@ -14,13 +14,7 @@ function About() {
 				<title>Gopal Kataria</title>
 				<link rel="icon" href="/G.svg" type="image/svg+xml" />
 
-				{/* Firebase  Scripts over here  */}
-				<script src="/__/firebase/7.15.5/firebase-app.js"></script>
-
-				<script src="/__/firebase/7.15.5/firebase-analytics.js"></script>
-
-				<script src="/__/firebase/init.js"></script>
-				<link rel="stylesheet" href="/bootstrap/css/bootstrap.css"></link>
+				<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"></link>
 				<style>
 					{`
 					html {
@@ -49,8 +43,8 @@ function About() {
 					<strong>
 						I am a high school student and a self-taught programmer.
 					</strong>
-					While main my main focus is web development, I love trying my hand and
-					new languages, software and frameworks. My ultimate goal is to build
+					While my main focus is web development, I love trying my hand at new
+					languages, software and frameworks. My ultimate goal is to build
 					something transformative for the society using my programming skills.
 					<br />
 					<br />
@@ -59,7 +53,7 @@ function About() {
 						<a href="#contact-me" className="text-primary px-1">
 							contact me
 						</a>
-						if you any ideas which you think I can bring to reality.
+						if you have any ideas which you think I can bring to reality.
 					</strong>
 					I have a good experience with front-end languages (HTML, CSS,
 					Javascript) and frameworks (React, Next.js, Bootstrap, Ionic) along
@@ -77,7 +71,7 @@ function About() {
 									title={project.title}
 									description={project.description}
 									link={project.link}
-									key={project.pid.toString()}
+									key={project.key}
 								></ProjectCard>
 							);
 						})}
@@ -100,8 +94,8 @@ function About() {
 							Quizzes, and compèring ).
 						</li>
 						<li>
-							Secured 188th position out of 3,000 participants in Global Citizen
-							Scholarship entrance exam.
+							Secured 188th position out of 3,000 participants in
+							Global Citizen Scholarship entrance exam.
 						</li>
 					</ul>
 				</Section>
@@ -170,8 +164,15 @@ function About() {
 					</div>
 				</footer>
 			</div>
+			<script src="/jquery.slim.min.js"></script>
+			{/* Firebase  Scripts over here  */}
+			<script src="/__/firebase/7.15.5/firebase-app.js"></script>
 
-			<script src="/bootstrap/js/bootstrap.js"></script>
+			<script src="/__/firebase/7.15.5/firebase-analytics.js"></script>
+
+			<script src="/__/firebase/init.js"></script>
+
+			<script src="/bootstrap/js/bootstrap.min.js"></script>
 		</div>
 	);
 }
