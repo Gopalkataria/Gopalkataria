@@ -1,10 +1,13 @@
-
-
+// Instructions about components
+// If the component IS A PAGE VIEW ( wrapped in BootstrapPage ) , the name should end in "Page"
+// if component is A PART OF THE PAGE, the name should end in "Component"
+// The only exception to the above rule is BootstrapPage component, which ends with
+// "Page" but it's not a page view, it is a wrapper for pages in bootstrap
 
 
 import App from "./about"
-export default function Index( ){return ( <App/> )};
-// instead of redirecting to about borrowing and reexporting its default component above
+export default function IndexPage( ){return ( <App/> )};
+// instead of redirecting to about page borrowing and re-exporting its default component above
 
 
 
@@ -17,7 +20,7 @@ import Link from "next/link"
 
 // go home component
 
-export function GoHome() {
+export function GoHomeComponent() {
 	return (<div className="row">
 		<div className="col-sm-2-4 mt-3 ml-2">
 			<Link href="/about">
@@ -31,7 +34,7 @@ export function GoHome() {
 // important component for using bootstrap throughout the website over here
 
 
-export function BootstrapApp(props: { title: string; children: any }) {
+export function BootstrapPage(props: { title: string; children: any }) {
 	return (
 		<div>
 			<Head>
@@ -41,28 +44,29 @@ export function BootstrapApp(props: { title: string; children: any }) {
 				 <meta data-charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
+				<meta name="Description" content="Gopal Kataria : High school student, self-taught programmer. Find More information about him over here. "/>
+
 
 				<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"></link>
-				<style>
-					{`
-					html {
-						scroll-behavior: smooth;
-					}
-					`}
-				</style>
+				<link rel="stylesheet" href="/scripts/main.css"/>
+
 			</Head>
 
 			<main>{props.children}</main>
-			<script src="/jquery.slim.min.js"></script>
+
+{/* 			Bootstrap scripts, use only when required
+			<script src="/bootstrap/jquery.slim.min.js"></script>
+			<script src="/bootstrap/js/bootstrap.min.js"></script> */}
+
 			{/* Firebase  Scripts over here  */}
 			<script src="/__/firebase/7.15.5/firebase-app.js"></script>
-
 			<script src="/__/firebase/7.15.5/firebase-analytics.js"></script>
-
 			<script src="/__/firebase/init.js"></script>
-			<script src="/bootstrap/logging.js"></script>
 
-			<script src="/bootstrap/js/bootstrap.min.js"></script>
+			{/* Custom javascript below */}
+			<script src="/scripts/main.js"></script>
+
+
 		</div>
 	);
 }
