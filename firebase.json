@@ -1,17 +1,12 @@
 {
   "hosting": {
     "public": "out",
-    "site": "gopalkataria",
+    "site" : "gopalkataria",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "cleanUrls": true
   }
 }

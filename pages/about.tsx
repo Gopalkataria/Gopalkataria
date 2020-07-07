@@ -1,28 +1,48 @@
-import {
-	Section,
-	Interest,
-	ProjectCard,
-	Project,
-} from "./components/components";
-import { MainProjects } from "./components/projects";
-import Head from "next/head";
+
+import { MainProjects, ProjectCard } from "./projects";
+import { BootstrapApp } from "./index";
+import Link from "next/link";
+import { ContactLinks } from "./contact";
+
+
+
+
+
+// Important components below
+
+export function Section(props: any) {
+	return (
+		<div>
+			<div className="row d-flex justify-content-left">
+				<h4 className="blockqoute mb-2 mt-5 col"> {props.title} </h4>
+			</div>
+			<div className="row d-flex justify-content-left">
+				<div className=" col-12 lead m-2 ">{props.children}</div>
+			</div>
+		</div>
+	);
+}
+
+export function Interest(props: any) {
+	return (
+		<div className="m-2 p-2">
+			<strong> {props.title} </strong> <br />
+			{props.children}
+		</div>
+	);
+}
+
+
+
+
+
+
+// main about view component below
+
 
 function About() {
 	return (
-		<div>
-			<Head>
-				<title>Gopal Kataria</title>
-				<link rel="icon" href="/G.svg" type="image/svg+xml" />
-
-				<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"></link>
-				<style>
-					{`
-					html {
-						scroll-behavior: smooth;
-					}
-					`}
-				</style>
-			</Head>
+		<BootstrapApp title="Gopal Kataria">
 			<div className="container ">
 				<div className="row d-flex justify-content-center m-4 bg-light">
 					<div className="col-sm-4 mx-auto px-auto my-2 py-2 ">
@@ -47,17 +67,19 @@ function About() {
 					languages, software and frameworks. My ultimate goal is to build
 					something transformative for the society using my programming skills.
 					<br />
-					<br />
+					<br />I have a good experience with front-end languages (HTML, CSS,
+					Javascript) and frameworks (React, Next.js, Bootstrap, Ionic) along
+					with great knowledge of Python.
 					<strong className="px-1">
 						Feel free to
 						<a href="#contact-me" className="text-primary px-1">
 							contact me
 						</a>
-						if you have any ideas which you think I can bring to reality.
+						with your requirements, I will do all my best to come upto more than
+						your expectations. I will render my services
+						<a className="text-success"> AT NO FEE </a> but at a little cost of
+						appreciation from you and your friends.
 					</strong>
-					I have a good experience with front-end languages (HTML, CSS,
-					Javascript) and frameworks (React, Next.js, Bootstrap, Ionic) along
-					with great knowledge of Python.
 				</Section>
 
 				<div>
@@ -75,7 +97,29 @@ function About() {
 								></ProjectCard>
 							);
 						})}
+
+						<div className="card bg-dark border border-warn col-sm-8 col-md-5 col-lg-5 m-2 p-2 ">
+							<div className="card-body text-center bg-dark text-light ">
+								<div className="card-title">
+									<h6>🔎 Explore All Projects</h6>{" "}
+								</div>
+								<div className="card-text mb-5">
+									Have a look at all my Projects.
+								</div>
+								<div className=" card-link btn btn-dark border border-white px-4  display-4 ">
+									<Link href="\projects">
+										<a className="text-light">
+											<strong> See all Projects </strong>
+										</a>
+									</Link>
+								</div>
+							</div>
+						</div>
+
+						{/* end of row of project cards  */}
 					</div>
+
+					{/* end of projects section cards  */}
 				</div>
 
 				<Section title="Achievements">
@@ -94,8 +138,8 @@ function About() {
 							Quizzes, and compèring ).
 						</li>
 						<li>
-							Secured 188th position out of 3,000 participants in
-							Global Citizen Scholarship entrance exam.
+							Secured 188th position out of 3,000 participants in Global Citizen
+							Scholarship entrance exam.
 						</li>
 					</ul>
 				</Section>
@@ -104,7 +148,10 @@ function About() {
 					<Interest title="Building PWA's ">
 						While building websites, turning them into Progressive Web Apps
 						(PWA's) makes them a lot faster, reliable and engaging. You can
-						check some PWA's I've built in my projects section.
+						check some PWA's I've built in my{" "}
+						<Link href="/projects">
+							<a className="text-primary mx-1">projects section.</a>
+						</Link>
 					</Interest>
 
 					<Interest title=" Solving algorithmic problems ">
@@ -121,25 +168,7 @@ function About() {
 					</Interest>
 				</Section>
 
-				<Section title="Contact me ">
-					<ul className="list-group " id="contact-me">
-						Either personal message me on my social media accounts or send an
-						Email. I will surely get back to you within 48 hours.
-						<li className="list-group-item text-primary">
-							<a href="https://twitter.com/gopal_kataria_" target="_blank">
-								Twitter @gopal_kataria_
-							</a>
-						</li>
-						<li className="list-group-item text-primary">
-							<a href="https://www.instagram.com/iam_gopalk/" target="_blank">
-								Instagram @iam_gopalk
-							</a>
-						</li>
-						<li className="list-group-item text-primary ">
-							Email: gopalkataria@yahoo.com
-						</li>
-					</ul>
-				</Section>
+				<ContactLinks/>
 
 				<footer className="row mt-5">
 					<div className="col-12 d-flex justify-content-center text-center">
@@ -164,16 +193,7 @@ function About() {
 					</div>
 				</footer>
 			</div>
-			<script src="/jquery.slim.min.js"></script>
-			{/* Firebase  Scripts over here  */}
-			<script src="/__/firebase/7.15.5/firebase-app.js"></script>
-
-			<script src="/__/firebase/7.15.5/firebase-analytics.js"></script>
-
-			<script src="/__/firebase/init.js"></script>
-
-			<script src="/bootstrap/js/bootstrap.min.js"></script>
-		</div>
+		</BootstrapApp>
 	);
 }
 
