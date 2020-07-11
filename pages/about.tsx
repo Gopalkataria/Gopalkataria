@@ -24,9 +24,9 @@ export function SectionComponent(props: { children : any , title : string , icon
 	return (
 		<div>
 			<div className='row d-flex justify-content-left'>
-				<ion-icon name={props.icon} /> {" "}
 
-				<h4 className='blockqoute mb-2 mt-5 col'> {props.title} </h4>
+
+				<h4 className='blockqoute mb-2 mt-5 col'> <ion-icon name={props.icon} /> {" "} {props.title} </h4>
 			</div>
 			<div className='row d-flex justify-content-left'>
 				<div className=' col lead m-2 '>{props.children}</div>

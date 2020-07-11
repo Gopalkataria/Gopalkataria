@@ -39,34 +39,40 @@ export function BootstrapPage(props: { title: string; children: any }) {
 		<div>
 			<Head>
 				<title>{props.title}</title>
-				<link rel="icon" href="/G.svg" type="image/svg+xml" />
+				<link rel='icon' href='/G.svg' type='image/svg+xml' />
 
-				 <meta data-charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+				<meta data-charset='utf-8' />
+				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1, shrink-to-fit=no'
+				/>
 
-				<meta name="Description" content="Gopal Kataria : High school student, self-taught programmer. Find More information about him over here. "/>
+				<meta
+					name='Description'
+					content='Gopal Kataria : High school student, self-taught programmer. Find More information about him over here. '
+				/>
 
-
-				<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"></link>
-				<link rel="stylesheet" href="/scripts/main.css"/>
-
+				{/* bootstrap css */}
+				<link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'></link>
+				{/* custom css */}
+				<link rel='stylesheet' href='/scripts/main.css' />
+				{/* ionicons js */}
+				<script src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'></script>
 			</Head>
 
 			<main>{props.children}</main>
 
-{/* 			Bootstrap scripts, use only when required
+			{/* 			Bootstrap scripts, use only when required
 			<script src="/bootstrap/jquery.slim.min.js"></script>
 			<script src="/bootstrap/js/bootstrap.min.js"></script> */}
 
 			{/* Firebase  Scripts over here  */}
-			<script src="/__/firebase/7.15.5/firebase-app.js"></script>
-			<script src="/__/firebase/7.15.5/firebase-analytics.js"></script>
-			<script src="/__/firebase/init.js"></script>
+			<script src='/__/firebase/7.15.5/firebase-app.js'></script>
+			<script src='/__/firebase/7.15.5/firebase-analytics.js'></script>
+			<script src='/__/firebase/init.js'></script>
 
 			{/* Custom javascript below */}
-			<script src="/scripts/main.js"></script>
-
-
+			<script src='/scripts/main.js'></script>
 		</div>
 	);
 }
