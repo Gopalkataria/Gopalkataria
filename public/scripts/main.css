@@ -1,5 +1,45 @@
 
 html {
     scroll-behavior: smooth ;
-    background-color: #f0ffff ;
+
+}
+.twitter {
+color : rgb(0, 0, 255)
+
+}
+
+.instagram{
+color : rgb(255, 16, 116)
+}
+
+.github {
+color : rgb(51, 51, 51)
+}
+
+.email {
+
+    color : rgb(128, 79, 0)
+
+}
+
+#no-fee {
+    color: darkgreen ;
+    font-weight: 700;
+}
+
+.email {
+    word-wrap: break-word;
+}
+
+.card {
+    background-color: rgba(230, 247, 245, 0.22) ;
+}
+
+.bg-gradient {
+    background: linear-gradient( 45deg, rgb(252, 228, 242) 1% , rgb(225, 252, 254) 50% , rgb(239, 245, 232) 100% );
+    border-radius: 8px ;
+}
+
+.img-fluid {
+    border-radius: 5px ;
 }

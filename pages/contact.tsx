@@ -4,59 +4,82 @@
 // The only exception to the above rule is BootstrapPage component, which ends with
 // "Page" but it's not a page view, it is a wrapper for pages in bootstrap
 
-
-
-
-
-import { SectionComponent } from "./about"
+import { SectionComponent } from "./about";
 import { BootstrapPage, GoHomeComponent } from ".";
 
+
+
 export function ContactLinksComponent() {
-    return (
-			<SectionComponent title="📞 Contact me ">
-				<ul className="list-group " id="contact-me">
-					Either personal message me on my social media accounts or send an
-					Email. I will surely get back to you within 48 hours. <br/>
-					<strong>
-						<li className="list-group-item text-primary">
-							<a href="https://twitter.com/gopal_kataria_" rel="noopener" target="_blank">
+	return (
+		<SectionComponent title='Contact me ' icon="call-sharp">
+			<ul className='list-group ' id='contact-me'>
+				Either personal message me on my social media accounts or send an Email.
+				I will surely get back to you within 48 hours. <br />
+				<strong>
+					<li className='list-group-item '>
+						<div className='twitter'>
+							<ion-icon name='logo-twitter'/> {"  "}
+							<a
+								href='https://twitter.com/gopal_kataria_'
+								rel='noreferrer'
+								target='_blank'
+								className=' text-primary'>
 								Twitter @gopal_kataria_
 							</a>
-						</li>
-						<li className="list-group-item text-primary">
-							<a href="https://www.instagram.com/iam_gopalk/" rel="noopener" target="_blank">
+						</div>
+					</li>
+					<li className='list-group-item'>
+						<div className='instagram'>
+							<ion-icon name='logo-instagram'></ion-icon> {"  "}
+							<a
+								href='https://www.instagram.com/iam_gopalk/'
+								rel='noreferrer'
+								target='_blank'
+								className=' text-primary'>
 								Instagram @iam_gopalk
 							</a>
-						</li>
-						<li className="list-group-item text-primary">
-							<a href="https://github.com/Gopalkataria" rel="noopener" target="_blank">
+						</div>
+					</li>
+					<li className='list-group-item '>
+						<div className='github'>
+							<ion-icon name='logo-github'></ion-icon> {"  "}
+							<a
+								href='https://github.com/Gopalkataria'
+								rel='noreferrer'
+								target='_blank'
+								className=' text-primary'>
 								Github @GopalKataria
 							</a>
-						</li>
-						<li className="list-group-item text-primary  ">
-							<a rel="noopener" href="mailto:gopalkataria@yahoo.com?subject=Saw_Your_Site">
+						</div>
+					</li>
+					<li className='list-group-item  email'>
+						<div className='email'>
+							<ion-icon name='mail-outline'></ion-icon> {"  "}
+							<a
+								rel='noreferrer'
+								className=' text-primary'
+								href='mailto:gopalkataria@yahoo.com?subject=Saw_Your_Site'>
 								Email: gopalkataria@yahoo.com
 							</a>
-						</li>
-					</strong>
-				</ul>
-			</SectionComponent>
-		);
+						</div>
+					</li>
+				</strong>
+			</ul>
+		</SectionComponent>
+	);
 }
 
 
+
+
 export default function ContactPage() {
-    return (
-        <BootstrapPage title="Contact Gopal">
-            <div className="container">
+	return (
+		<BootstrapPage title="Contact Gopal">
+			<div className="container">
+					<GoHomeComponent />
 
-            <div className="row align-items-center">
-
-                <GoHomeComponent />
-
-            <ContactLinksComponent/>
-            </div>
-            </div>
-        </BootstrapPage>
-    )
+					<ContactLinksComponent />
+			</div>
+		</BootstrapPage>
+	);
 }

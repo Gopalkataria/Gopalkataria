@@ -4,9 +4,7 @@
 // The only exception to the above rule is BootstrapPage component, which ends with
 // "Page" but it's not a page view, it is a wrapper for pages in bootstrap
 
-
 import { BootstrapPage, GoHomeComponent } from "./index";
-
 
 //data structure for projects is a list of projects
 // there are main projects which display on front page
@@ -25,11 +23,15 @@ export function ProjectCardComponent(props: Project) {
 	return (
 		<div className="card border border-info col-sm-8 col-md-5 col-lg-5 m-2 p-2 w-18">
 			<div className="card-body">
-				<h5 className="card-title text-dark">{props.title}</h5>
+				<h5 className="card-title  text-dark">{props.title}</h5>
 				<div className="card-text">{props.description}</div>
 
-				<a href={props.link} target="_blank" className=" card-link btn btn_primary stretched_link ">
-					<strong> See this 👀 </strong>
+				<a
+					href={props.link}
+					target="_blank"
+					className=" d-flex justify-content-center card-link btn bg-primary text-white mt-2 stretched_link "
+				>
+					<strong> See this 🥽 </strong>
 				</a>
 			</div>
 		</div>
@@ -37,31 +39,31 @@ export function ProjectCardComponent(props: Project) {
 }
 
 export const MainProjects: Project[] = [
-					// all project keys are UNIQUE
-					// only three projects here
-					{
-						key: 1,
-						title: " This Page ",
-						description:
-							" The page you are looking at right now is made using Next.js and Bootstrap from ground up ",
-						link: "https://gopalkataria.web.app",
-					},
-					{
-						key: 2,
-						title: " Take My Note - Ionic & React ",
-						description:
-							" A web-app where you can temporarily keep some text. Built using Ionic and React. ",
-						link: "https://takemynote.web.app",
-					},
+	// all project keys are UNIQUE
+	// only three projects here
+	{
+		key: 1,
+		title: " My Portfolio Page ",
+		description:
+			" The page you are looking at right now is made using Next.js and Bootstrap from ground up ",
+		link: "https://gopalkataria.web.app",
+	},
+	{
+		key: 2,
+		title: " Take My Note - Ionic & React ",
+		description:
+			" A web-app where you can temporarily keep some text. Built using Ionic and React. ",
+		link: "https://takemynote.web.app",
+	},
 
-					{
-						key: 3,
-						title: "Time table",
-						description:
-							"A place to keep your weekly schedule. Made in collaboration with My friend David Yadav",
-						link: "https://david-learns-coding.github.io/Time-table/",
-					},
-				];
+	{
+		key: 3,
+		title: "Time table",
+		description:
+			"A place to keep your weekly schedule. Made in collaboration with My friend David Yadav",
+		link: "https://david-learns-coding.github.io/Time-table/",
+	},
+];
 
 const OtherProjects: Project[] = [
 	// all project keys are UNIQUE
