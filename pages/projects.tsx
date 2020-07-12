@@ -17,21 +17,25 @@ export interface Project {
 	link: string;
 }
 
+
+
+
 // Important components and data below
 
 export function ProjectCardComponent(props: Project) {
 	return (
-		<div className="card border border-info col-sm-8 col-md-5 col-lg-5 m-2 p-2 w-18">
-			<div className="card-body">
-				<h5 className="card-title  text-dark">{props.title}</h5>
-				<div className="card-text">{props.description}</div>
+		<div
+			data-aos='zoom-in-up'
+			className='card border border-info col-sm-8 col-md-5 col-lg-5 m-2 p-2 w-18'>
+			<div className='card-body d-flex flex-column justify-content-around '>
+				<h5 className='card-title  text-dark'>{props.title}</h5>
+				<div className='card-text'>{props.description}</div>
 
 				<a
 					href={props.link}
-					target="_blank"
-					className=" d-flex justify-content-center card-link btn bg-primary text-white mt-2 stretched_link "
-				>
-					<strong> See this 🥽 </strong>
+					target='_blank'
+					className=' d-flex justify-content-center card-link btn btn-raisable bg-primary text-white mt-2  stretched_link '>
+					<strong>See this 🥽 </strong>
 				</a>
 			</div>
 		</div>
@@ -130,29 +134,29 @@ export { AllProjects };
 export default function ProjectsPage() {
 	return (
 		<BootstrapPage title="Gopal's Projects">
-			<div className="container ">
+			<div className='container '>
 				<GoHomeComponent />
-				<div className=" border border-dark m-3 p-3 ">
-					<div className="row ">
-						<h5 className="col  text-center ">
+				<div className=' border border-dark m-3 p-3 '>
+					<div className='row '>
+						<h5 className='col  text-center '>
 							<strong>Projects</strong>
 						</h5>
 					</div>
-					<div className="row">
-						<div className=" col text-secondary mx-2 my-1 text-wrap text-center">
-							These are some of my notable projects. Head over to My
+					<div className='row'>
+						<div className=' col text-secondary mx-2 my-1 text-wrap text-center'>
+							These are some of my notable projects. Head over to
 							<a
-								href="https://github.com/Gopalkataria"
-								target="_blank"
-								className="text-primary px-1 "
-							>
-								Github Profile
+								href='https://github.com/Gopalkataria'
+								target='_blank'
+								className='text-primary px-1 '>
+								{" "}
+								My Github Profile
 							</a>{" "}
 							to find some more stuff
 						</div>
 					</div>
 				</div>
-				<div className="row justify-content-center">
+				<div className='row justify-content-center'>
 					{AllProjects.map((project) => {
 						return (
 							<ProjectCardComponent

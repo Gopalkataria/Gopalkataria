@@ -9,25 +9,32 @@ import App from "./about"
 export default function IndexPage( ){return ( <App/> )};
 // instead of redirecting to about page borrowing and re-exporting its default component above
 
-
+declare global {
+	const  AOS: any;
+}
 
 
 
 import Head from "next/head";
 import Link from "next/link"
+import { useEffect } from "react";
 
 
 
 // go home component
 
 export function GoHomeComponent() {
-	return (<div className="row">
-		<div className="col-sm-2-4 mt-3 ml-2">
-			<Link href="/about">
-				<a className="text-primary border border-primary p-2">Go Back Home</a>
-			</Link>
+	return (
+		<div className='row'>
+			<div className='col-sm-2-4 mt-3 ml-2'>
+				<Link href='/about'>
+					<a className='text-primary border border-primary raisable p-2'>
+						Go to About Page
+					</a>
+				</Link>
+			</div>
 		</div>
-	</div>);
+	);
 }
 
 
@@ -35,6 +42,19 @@ export function GoHomeComponent() {
 
 
 export function BootstrapPage(props: { title: string; children: any }) {
+
+	useEffect(() => {
+		AOS.init({
+			disable: "phone",
+			offset : 60 ,
+			duration: 600, // values from 0 to 3000, with step 50ms
+			easing: "ease-in-out",
+			mirror: true ,
+		});
+		AOS.refresh();
+	});
+
+
 	return (
 		<div>
 			<Head>
@@ -56,8 +76,13 @@ export function BootstrapPage(props: { title: string; children: any }) {
 				<link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'></link>
 				{/* custom css */}
 				<link rel='stylesheet' href='/scripts/main.css' />
-				{/* ionicons js */}
-				<script src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'></script>
+
+				{/* custom fonts */}
+				<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet"></link>
+
+				<link
+					href='https://unpkg.com/aos@2.3.1/dist/aos.css'
+					rel='stylesheet'></link>
 			</Head>
 
 			<main>{props.children}</main>
@@ -71,8 +96,18 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<script src='/__/firebase/7.15.5/firebase-analytics.js'></script>
 			<script src='/__/firebase/init.js'></script>
 
+			{/* AOS scrolling library  */}
+			<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+
 			{/* Custom javascript below */}
 			<script src='/scripts/main.js'></script>
+			{/* ionicons js */}
+			<script
+				type='module'
+				src='https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js'></script>
+			<script
+				noModule={false}
+				src='https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js'></script>
 		</div>
 	);
 }

@@ -13,7 +13,7 @@ import { ContactLinksComponent } from "./contact";
 declare global {
     namespace JSX {
         interface IntrinsicElements {
-            'ion-icon': { name : string };
+            'ion-icon': { name : string , size ?: string };
         }
     }
 }
@@ -22,11 +22,12 @@ declare global {
 
 export function SectionComponent(props: { children : any , title : string , icon : string }) {
 	return (
-		<div>
+		<div data-aos='zoom-in-left'>
 			<div className='row d-flex justify-content-left'>
-
-
-				<h4 className='blockqoute mb-2 mt-5 col'> <ion-icon name={props.icon} /> {" "} {props.title} </h4>
+				<h4 className='blockqoute mb-2 mt-5 col'>
+					{" "}
+					<ion-icon size='large' name={props.icon} /> {props.title}{" "}
+				</h4>
 			</div>
 			<div className='row d-flex justify-content-left'>
 				<div className=' col lead m-2 '>{props.children}</div>
@@ -46,7 +47,7 @@ export function InterestComponent(props: any) {
 
 // main about view component below
 
-export default function About() {
+export default function AboutPage() {
 	return (
 		<BootstrapPage title='Gopal Kataria'>
 			<div className='container '>
@@ -86,12 +87,7 @@ export default function About() {
 							contact me
 						</a>
 						with your requirements, I will do all my best to come upto more than
-						your expectations. I will render my services
-						<a className='text-success' id='no-fee'>
-							{" "}
-							AT NO FEE{" "}
-						</a>{" "}
-						but at a little cost of appreciation from you and your friends.
+						your expectations.
 					</strong>
 				</SectionComponent>
 
@@ -102,18 +98,17 @@ export default function About() {
 							Javascript
 						</li>
 						<li>
-							Good Knowledge of Front-end frameworks like React.js, Next.js,
+							Basic Knowledge of Front-end frameworks like React.js, Next.js,
 							Ionic (with React){" "}
 						</li>
 						<li>
 							Good Knowledge of Python (algorithms, scrap-code, automation)
 						</li>
 						<li>Strong base in Mathematics (as a high school student)</li>
-						<li>Web UI Frameworks (Bootstrap and Ionic)</li>
-						<li>Comfortable with command line (CMD, Powershell) </li>
 						<li>Firebase hosting and analytics </li>
 						<li>Comfortable with Git and Github</li>
 						<li>Beginner level expertise in C# and Java </li>
+						<li>A talented elocutionist</li>
 					</ul>
 				</SectionComponent>
 
@@ -122,7 +117,7 @@ export default function About() {
 				BE VERY CAREFUL WITH <div></div> AS THEY ARE QUITE CONFUSING
 				click on then to check which are their closing tags
 				*/}
-				<div>
+				<div data-aos='zoom-out-up'>
 					<div className='row d-flex justify-content-left'>
 						<h4 className='blockqoute mb-2 mt-5 col'>
 							{" "}
@@ -140,22 +135,21 @@ export default function About() {
 							);
 						})}
 
-						<div className='card bg-dark border border-warn col-sm-8 col-md-5 col-lg-5 m-2 p-2 '>
+						<div
+							data-aos='zoom-out-up'
+							className='card bg-dark border border-warn col-sm-8 col-md-5 col-lg-5 m-2 p-2 '>
 							<div className='card-body text-center bg-dark text-light '>
 								<div className='card-title'>
-									<h6>
-										<ion-icon name='search-sharp'/> {" "} Explore All
-										Projects
-									</h6>{" "}
+									<h6>🔎 Explore All Projects</h6>{" "}
 								</div>
 								<div className='card-text mb-5'>
 									Have a look at all my Projects.
 								</div>
-								<div className=' card-link btn btn-dark border border-white px-4  display-4 '>
+								<div className=' card-link raisable btn btn-dark border border-white px-4  display-4 '>
 									<Link href='\projects'>
-										<a className='text-light'>
+										<div className='text-light '>
 											<strong> See all Projects </strong>
-										</a>
+										</div>
 									</Link>
 								</div>
 							</div>
@@ -167,7 +161,7 @@ export default function About() {
 					{/* end of projects section cards  */}
 				</div>
 
-				<SectionComponent title='Achievements' icon="trophy-sharp">
+				<SectionComponent title='Achievements' icon='trophy-sharp'>
 					<ul>
 						<li>
 							Participated in Google's kickstart competition. Solved numerous
@@ -199,7 +193,7 @@ export default function About() {
 					</ul>
 				</SectionComponent>
 
-				<SectionComponent title=' Interests ' icon="heart-circle-sharp">
+				<SectionComponent title=' Interests ' icon='heart-circle-sharp'>
 					<InterestComponent title="Building PWA's ">
 						While building websites, turning them into Progressive Web Apps
 						(PWA's) makes them a lot faster, reliable and engaging. You can

@@ -1,45 +1,110 @@
+/* P.S. This file is common to all the pages  */
 
 html {
-    scroll-behavior: smooth ;
-
-}
-.twitter {
-color : rgb(0, 0, 255)
-
-}
-
-.instagram{
-color : rgb(255, 16, 116)
-}
-
-.github {
-color : rgb(51, 51, 51)
-}
-
-.email {
-
-    color : rgb(128, 79, 0)
-
-}
-
-#no-fee {
-    color: darkgreen ;
-    font-weight: 700;
-}
-
-.email {
-    word-wrap: break-word;
-}
-
-.card {
-    background-color: rgba(230, 247, 245, 0.22) ;
+	scroll-behavior: smooth;
 }
 
 .bg-gradient {
-    background: linear-gradient( 45deg, rgb(252, 228, 242) 1% , rgb(225, 252, 254) 50% , rgb(239, 245, 232) 100% );
-    border-radius: 8px ;
+	background: linear-gradient(
+		45deg,
+		rgb(255, 226, 243) 1%,
+		rgb(222, 253, 255) 50%,
+		rgb(196, 255, 209) 100%
+	);
+	border-radius: 8px;
+	transition: ease-in-out 0.8s ;
 }
 
+.bg-gradient:hover {
+	background: linear-gradient(
+		45deg,
+		rgb(255, 226, 243) 15%,
+		rgb(222, 253, 255) 50%,
+		rgb(196, 255, 209) 85%
+	);
+	box-shadow: 3px 3px 8px #000000a9;
+}
+
+.raisable {
+
+	transition: 0.4s;
+
+}
+
+.raisable:hover {
+
+	box-shadow: 1px 1px 5px 0px black;
+}
+
+
+.btn-raisable {
+	transition: cubic-bezier(0.96, 0.25, 0.13, 0.35) 0.6s;
+    box-shadow: none;
+
+}
+.btn-raisable:hover {
+	box-shadow: 1px 1px 5px 0px black;
+    background-color: rgb(0, 123, 255);
+    background: blue ;
+}
+
+.btn:hover {
+	text-decoration: none ;
+}
+
+.eye-icon {
+	color : white ;
+}
+
+.card {
+	transition: cubic-bezier(0.96, 0.25, 0.13, 0.35) 0.7s;
+}
+
+.card:hover {
+	box-shadow: 3px 3px 8px #000000c2;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+
+ion-icon {
+	font-size: 35px;
+}
+
+
+.twitter {
+	color: rgb(0, 0, 255);
+}
+
+.instagram {
+	color: rgb(255, 16, 116);
+}
+
+.github {
+	color: rgb(51, 51, 51);
+}
+
+.email {
+	color: rgb(128, 79, 0);
+}
+
+
+.email {
+	word-wrap: break-word;
+}
+
+.card {
+	background-color: rgba(230, 247, 245, 0.054);
+}
+
+
 .img-fluid {
-    border-radius: 5px ;
+	border-radius: 5px;
+}
+
+
+.lead {
+	font-family: 'Exo 2', sans-serif;
 }
