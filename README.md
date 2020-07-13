@@ -1,8 +1,6 @@
-This repository has all the source code for my portfolio page
+## About me 
+I am a high school student and a self-taught programmer.While my main focus is web development, I love trying my hand at new languages, software and frameworks. My ultimate goal is to build something transformative for the society using my programming skills.
 
-If you happen to see this file, please see the porfolio page for a live demo :
-[ About - Gopal Kataria ](https://gopalkataria.web.app) 
+I have a good experience with front-end languages (HTML, CSS, Javascript) and frameworks (React, Next.js, Bootstrap, Ionic) along with great knowledge of Python.Feel free to [contact me]( https://gopalkataria.web.app/) with your requirements, I will do all my best to come upto more than your expectations.
 
-Feel free to fork this to make your own portfolio page ! 
 
-Made with love using Bootstrap and Next.js
