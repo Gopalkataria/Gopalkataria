@@ -1,4 +1,4 @@
-![Gopal Kataria](./screenshot.jpg)
+![Gopal Kataria](screenshot.jpg)
 
 
 ## About me 
