@@ -136,7 +136,7 @@ export default function ProjectsPage() {
 		<BootstrapPage title="Gopal's Projects">
 			<div className='container '>
 				<GoHomeComponent />
-				<div className=' border border-dark m-3 p-3 '>
+				<div className=' projects-heading border border-dark m-3 p-3 '>
 					<div className='row '>
 						<h5 className='col  text-center '>
 							<strong>Projects</strong>

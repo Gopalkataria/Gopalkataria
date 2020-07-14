@@ -11,24 +11,24 @@ import { BootstrapPage, GoHomeComponent } from ".";
 
 export function ContactLinksComponent() {
 	return (
-		<SectionComponent title='Contact me ' icon="call-sharp">
+		<SectionComponent title='Contact me ' icon='call-sharp'>
 			<ul className='list-group ' id='contact-me'>
 				Either personal message me on my social media accounts or send an Email.
 				I will surely get back to you within 48 hours. <br />
 				<strong>
-					<li className='list-group-item '>
+					<li className='list-group-item  links '>
 						<div className='twitter'>
-							<ion-icon name='logo-twitter'/> {"  "}
+							<ion-icon name='logo-twitter' /> {"  "}
 							<a
-								href='https://twitter.com/gopal_kataria_'
+								href='https://twitter.com/GopalKatariaGK'
 								rel='noreferrer'
 								target='_blank'
 								className=' text-primary'>
-								Twitter @gopal_kataria_
+								Twitter @GopalKatariaGK
 							</a>
 						</div>
 					</li>
-					<li className='list-group-item'>
+					<li className='list-group-item links '>
 						<div className='instagram'>
 							<ion-icon name='logo-instagram'></ion-icon> {"  "}
 							<a
@@ -40,7 +40,7 @@ export function ContactLinksComponent() {
 							</a>
 						</div>
 					</li>
-					<li className='list-group-item '>
+					<li className='list-group-item links  '>
 						<div className='github'>
 							<ion-icon name='logo-github'></ion-icon> {"  "}
 							<a
@@ -52,7 +52,7 @@ export function ContactLinksComponent() {
 							</a>
 						</div>
 					</li>
-					<li className='list-group-item  email'>
+					<li className='list-group-item  email links '>
 						<div className='email'>
 							<ion-icon name='mail-outline'></ion-icon> {"  "}
 							<a

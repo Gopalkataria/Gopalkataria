@@ -22,9 +22,9 @@ declare global {
 
 export function SectionComponent(props: { children : any , title : string , icon : string }) {
 	return (
-		<div data-aos='zoom-in-left'>
+		<div data-aos='zoom-out-right'>
 			<div className='row d-flex justify-content-left'>
-				<h4 className='blockqoute mb-2 mt-5 col'>
+				<h4 className='blockqoute mb-2 mt-5 col blink'>
 					{" "}
 					<ion-icon size='large' name={props.icon} /> {props.title}{" "}
 				</h4>
@@ -38,7 +38,7 @@ export function SectionComponent(props: { children : any , title : string , icon
 
 export function InterestComponent(props: any) {
 	return (
-		<div className='m-2 p-2'>
+		<div className='m-2 p-2 intrests'>
 			<strong> {props.title} </strong> <br />
 			{props.children}
 		</div>
@@ -55,7 +55,7 @@ export default function AboutPage() {
 					<div className='col-sm-8 col-md-4  mx-auto h-100 px-auto my-auto py-2 '>
 						<div className=' d-flex my-auto flex-column h-100 justify-content-center'>
 							<img
-								src='/avatar.jpg'
+								src='/avatar.webp'
 								alt="One of the Gopal's best pictures"
 								className='img-fluid '></img>
 						</div>
@@ -83,7 +83,7 @@ export default function AboutPage() {
 					with great knowledge of Python.
 					<strong className='px-1'>
 						Feel free to
-						<a href='#contact-me' className='text-primary px-1'>
+						<a href='#contact-me' className=' text-primary px-1'>
 							contact me
 						</a>
 						with your requirements, I will do all my best to come upto more than
@@ -119,7 +119,7 @@ export default function AboutPage() {
 				*/}
 				<div data-aos='zoom-out-up'>
 					<div className='row d-flex justify-content-left'>
-						<h4 className='blockqoute mb-2 mt-5 col'>
+						<h4 className='blockqoute mb-2 mt-5 col blink'>
 							{" "}
 							<ion-icon name='color-wand-outline' /> Recent Projects
 						</h4>
@@ -136,7 +136,7 @@ export default function AboutPage() {
 						})}
 
 						<div
-							data-aos='zoom-out-up'
+							data-aos='zoom-in-up'
 							className='card bg-dark border border-warn col-sm-8 col-md-5 col-lg-5 m-2 p-2 '>
 							<div className='card-body text-center bg-dark text-light '>
 								<div className='card-title'>
@@ -145,7 +145,7 @@ export default function AboutPage() {
 								<div className='card-text mb-5'>
 									Have a look at all my Projects.
 								</div>
-								<div className=' card-link raisable btn btn-dark border border-white px-4  display-4 '>
+								<div className='jiggle card-link raisable btn btn-dark border border-white px-4  display-4 '>
 									<Link href='\projects'>
 										<div className='text-light '>
 											<strong> See all Projects </strong>
