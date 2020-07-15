@@ -1,4 +1,4 @@
-[![Gopal Kataria](https://raw.githubusercontent.com/Gopalkataria/Gopalkataria/master/screenshot.jpg)]( https://gopalkataria.web.app/)
+[![Gopal Kataria](https://raw.githubusercontent.com/Gopalkataria/Gopalkataria/master/screenshot.gif)]( https://gopalkataria.web.app/)
 
 
 # Who am I ?
@@ -9,9 +9,9 @@
 ### Check my [Profile Page ]( https://gopalkataria.web.app/ )
 ### Follow me on [Twitter ]( https://twitter.com/GopalKatariaGK)
 ### Follow me on [Instagram]( https://www.instagram.com/iam_gopalk/ )
-### Try searching Gopal Kataria programmer on Google 
+### Try searching Gopal Kataria programmer on Google
 
-# what do I know ? 
+# what do I know ?
 ### Good Knowledge of Front-end languages like CSS, HTML and Javascript
 ### Basic Knowledge of Front-end frameworks like React.js, Next.js, Ionic (with React)
 ### Good Knowledge of Python (algorithms, scrap-code, automation)

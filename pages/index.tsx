@@ -75,7 +75,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 				{/* bootstrap css */}
 				<link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'></link>
 				{/* custom css */}
-				<link rel='stylesheet' href='/scripts/main.css' />
+				<link rel='stylesheet' href='/scripts/main.css?ver=1.1' />
 
 				{/* custom fonts */}
 				<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet"></link>
