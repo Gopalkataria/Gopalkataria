@@ -9,7 +9,7 @@
 ### * Check my [Profile Page ]( https://gopalkataria.web.app/ )
 ### * Follow me on [Twitter ]( https://twitter.com/GopalKatariaGK)
 ### * Follow me on [Instagram]( https://www.instagram.com/iam_gopalk/ )
-### * Try serching Gopal Kataria programmer on Google 
+### * Try searching Gopal Kataria programmer on Google 
 
 # what do I know ? 
 ### * Good Knowledge of Front-end languages like CSS, HTML and Javascript
