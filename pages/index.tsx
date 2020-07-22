@@ -45,11 +45,12 @@ export function BootstrapPage(props: { title: string; children: any }) {
 
 	useEffect(() => {
 		AOS.init({
-			disable: "phone",
-			offset : 60 ,
+			disable: "phone", // disable all animations on small screens
+			offset: 60,
 			duration: 600, // values from 0 to 3000, with step 50ms
-			easing: "ease-in-out",
-			mirror: true ,
+			easing: "ease-in-out", // animation
+			mirror: true, // do the opposite animation on prev div
+			anchorPlacement: "top-center", // defines which position of the element regarding to window should trigger the animation
 		});
 		AOS.refresh();
 	});
@@ -75,10 +76,10 @@ export function BootstrapPage(props: { title: string; children: any }) {
 				{/* bootstrap css */}
 				<link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'></link>
 				{/* custom css */}
-				<link rel='stylesheet' href='/scripts/main.css?ver=1.1' />
+				<link rel='stylesheet' href='/scripts/main.css?ver=1.2' />
 
 				{/* custom fonts */}
-				<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet"></link>
+			<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap" rel="stylesheet"></link>
 
 				<link
 					href='https://unpkg.com/aos@2.3.1/dist/aos.css'

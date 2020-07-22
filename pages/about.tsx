@@ -38,7 +38,7 @@ export function SectionComponent(props: { children : any , title : string , icon
 
 export function InterestComponent(props: any) {
 	return (
-		<div className='m-2 p-2 intrests'>
+		<div data-aos='flip-left' className='m-2 p-2 intrests'>
 			<strong> {props.title} </strong> <br />
 			{props.children}
 		</div>
@@ -50,7 +50,7 @@ export function InterestComponent(props: any) {
 export default function AboutPage() {
 	return (
 		<BootstrapPage title='Gopal Kataria'>
-			<div className='container '>
+			<div className='container-fluid '>
 				<div className='row d-flex justify-content-center mx-auto mt-3 p-3 bg-gradient'>
 					<div className='col-sm-8 col-md-4  mx-auto h-100 px-auto my-auto py-2 '>
 						<div className=' d-flex my-auto flex-column h-100 justify-content-center'>
