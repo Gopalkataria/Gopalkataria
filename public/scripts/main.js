@@ -9,7 +9,7 @@
 // firebase is already initialized
 
 // easter eggs are a must for me at least
-const GOPAL_KATARIA = `
+const GOPAL_KATARIA = ` %c
   _______ _______ _______ _______ ___          ___   _ _______ _______ _______ ______   ___ _______
  |       |       |       |   _   |   |        |   | | |   _   |       |   _   |    _ | |   |   _   |
  |    ___|   _   |    _  |  |_|  |   |        |   |_| |  |_|  |_     _|  |_|  |   | || |   |  |_|  |
@@ -19,7 +19,7 @@ const GOPAL_KATARIA = `
  |_______|_______|___|   |__| |__|_______|    |___| |_|__| |__| |___| |__| |__|___|  |_|___|__| |__|
 `;
 
-console.log(GOPAL_KATARIA);
+console.log(GOPAL_KATARIA ,  " color: blue ; padding: 2px; border-radius:2px ; background: white ");
 console.info(" btw \n Copyright, Gopal Kataria ,2020 \n you can't copy my code, just take inspiration to write your own")
 
 firebase.analytics().logEvent("Page_visited")
