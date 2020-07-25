@@ -1,25 +1,31 @@
+//  © 2020, Gopal Kataria
+
+/**
+ * (Type docs)
+ *
+ * @author Gopal Kataria
+ * @description https://github.com/Gopalkataria
+ */
+
 // Instructions about components
 // If the component IS A PAGE VIEW ( wrapped in BootstrapPage ) , the name should end in "Page"
 // if component is A PART OF THE PAGE, the name should end in "Component"
 // The only exception to the above rule is BootstrapPage component, which ends with
 // "Page" but it's not a page view, it is a wrapper for pages in bootstrap
 
-
-import App from "./about"
-export default function IndexPage( ){return ( <App/> )};
+import App from "./about";
+export default function IndexPage() {
+	return <App />;
+}
 // instead of redirecting to about page borrowing and re-exporting its default component above
 
 declare global {
-	const  AOS: any;
+	const AOS: any;
 }
 
-
-
 import Head from "next/head";
-import Link from "next/link"
+import Link from "next/link";
 import { useEffect } from "react";
-
-
 
 // go home component
 
@@ -37,12 +43,9 @@ export function GoHomeComponent() {
 	);
 }
 
-
 // important component for using bootstrap throughout the website over here
 
-
 export function BootstrapPage(props: { title: string; children: any }) {
-
 	useEffect(() => {
 		AOS.init({
 			disable: "phone", // disable all animations on small screens
@@ -54,7 +57,6 @@ export function BootstrapPage(props: { title: string; children: any }) {
 		});
 		AOS.refresh();
 	});
-
 
 	return (
 		<div>
@@ -74,19 +76,27 @@ export function BootstrapPage(props: { title: string; children: any }) {
 				/>
 
 				{/* bootstrap css */}
-				<link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'></link>
-				{/* custom css */}
-				<link rel='stylesheet' href='/scripts/main.css?ver=1.2' />
-
-				{/* custom fonts */}
-			<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap" rel="stylesheet"></link>
-
 				<link
-					href='https://unpkg.com/aos@2.3.1/dist/aos.css'
-					rel='stylesheet'></link>
+					rel='stylesheet'
+					href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
+					integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u'
+					data-crossorigin='anonymous'>
+					{" "}
+				</link>
 			</Head>
 
 			<main>{props.children}</main>
+			{/* custom css */}
+			<link rel='stylesheet' href='/scripts/main.css?ver=1.2' />
+
+			{/* custom fonts */}
+			<link
+				href='https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap'
+				rel='stylesheet'></link>
+
+			<link
+				href='https://unpkg.com/aos@2.3.1/dist/aos.css'
+				rel='stylesheet'></link>
 
 			{/* 			Bootstrap scripts, use only when required
 			<script src="/bootstrap/jquery.slim.min.js"></script>

@@ -1,3 +1,12 @@
+//  © 2020, Gopal Kataria
+
+/**
+ * (Type docs)
+ *
+ * @author Gopal Kataria
+ * @description https://github.com/Gopalkataria
+ */
+
 // Instructions about components
 // If the component IS A PAGE VIEW ( wrapped in BootstrapPage ) , the name should end in "Page"
 // if component is A PART OF THE PAGE, the name should end in "Component"
@@ -16,9 +25,6 @@ export interface Project {
 	description: string;
 	link: string;
 }
-
-
-
 
 // Important components and data below
 

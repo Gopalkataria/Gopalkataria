@@ -1,3 +1,12 @@
+//  © 2020, Gopal Kataria
+
+/**
+ * (Type docs)
+ *
+ * @author Gopal Kataria
+ * @description https://github.com/Gopalkataria
+ */
+
 // Instructions about components
 // If the component IS A PAGE VIEW ( wrapped in BootstrapPage ) , the name should end in "Page"
 // if component is A PART OF THE PAGE, the name should end in "Component"
@@ -9,18 +18,21 @@ import { BootstrapPage } from "./index";
 import Link from "next/link";
 import { ContactLinksComponent } from "./contact";
 
-
 declare global {
-    namespace JSX {
-        interface IntrinsicElements {
-            'ion-icon': { name : string , size ?: string };
-        }
-    }
+	namespace JSX {
+		interface IntrinsicElements {
+			"ion-icon": { name: string; size?: string };
+		}
+	}
 }
 
 // Important components below
 
-export function SectionComponent(props: { children : any , title : string , icon : string }) {
+export function SectionComponent(props: {
+	children: any;
+	title: string;
+	icon: string;
+}) {
 	return (
 		<div data-aos='zoom-out-right'>
 			<div className='row d-flex justify-content-left'>

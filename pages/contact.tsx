@@ -1,3 +1,12 @@
+//  © 2020, Gopal Kataria
+
+/**
+ * (Type docs)
+ *
+ * @author Gopal Kataria
+ * @description https://github.com/Gopalkataria
+ */
+
 // Instructions about components
 // If the component IS A PAGE VIEW ( wrapped in BootstrapPage ) , the name should end in "Page"
 // if component is A PART OF THE PAGE, the name should end in "Component"
@@ -6,8 +15,6 @@
 
 import { SectionComponent } from "./about";
 import { BootstrapPage, GoHomeComponent } from ".";
-
-
 
 export function ContactLinksComponent() {
 	return (
@@ -69,16 +76,13 @@ export function ContactLinksComponent() {
 	);
 }
 
-
-
-
 export default function ContactPage() {
 	return (
-		<BootstrapPage title="Contact Gopal">
-			<div className="container">
-					<GoHomeComponent />
+		<BootstrapPage title='Contact Gopal'>
+			<div className='container'>
+				<GoHomeComponent />
 
-					<ContactLinksComponent />
+				<ContactLinksComponent />
 			</div>
 		</BootstrapPage>
 	);
