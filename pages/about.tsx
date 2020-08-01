@@ -28,13 +28,9 @@ declare global {
 
 // Important components below
 
-export function SectionComponent(props: {
-	children: any;
-	title: string;
-	icon: string;
-}) {
+export function SectionComponent(props: { children: any; title: string; icon: string }) {
 	return (
-		<div data-aos='zoom-out-right'>
+		<div data-aos='zoom-out-right' className='section'>
 			<div className='row d-flex justify-content-left'>
 				<h4 className='blockqoute mb-2 mt-5 col blink'>
 					{" "}
@@ -62,60 +58,50 @@ export function InterestComponent(props: any) {
 export default function AboutPage() {
 	return (
 		<BootstrapPage title='Gopal Kataria'>
-			<div className='container'>
+			<div className='container' data-aos='fade'>
 				<div className='row d-flex justify-content-center mx-auto mt-3 p-3 bg-gradient'>
 					<div className='col-sm-8 col-md-4  mx-auto h-100 px-auto my-auto py-2 '>
 						<div className=' d-flex my-auto flex-column h-100 justify-content-center'>
 							<img
 								src='/avatar.webp'
 								alt="One of the Gopal's best pictures"
-								className='img-fluid '></img>
+								className='display-img img-fluid '></img>
 						</div>
 					</div>
 					<div className='col-sm-6 col-md-8 col-lg-6 my-auto text-center'>
-						<h1 className='  display-4 '>
+						<h1 className='  display-4 text-light'>
 							{" "}
 							<b>Gopal Kataria</b>
 						</h1>
-						<h4 className='text-muted '>High school student</h4>
-						<h4 className='text-muted '>Born in 2004</h4>
+						<h4 className='text-light '>High school student</h4>
+						<h4 className='text-light'>Born in 2004</h4>
 					</div>
 				</div>
 
 				<SectionComponent title={"About Me "} icon='person-outline'>
-					<strong>
-						I am a high school student and a self-taught programmer.
-					</strong>
-					While my main focus is web development, I love trying my hand at new
-					languages, software and frameworks. My ultimate goal is to build
-					something transformative for the society using my programming skills.
+					<strong>I am a high school student and a self-taught programmer.</strong>
+					While my main focus is web development, I love trying my hand at new languages, software
+					and frameworks. My ultimate goal is to build something transformative for the society
+					using my programming skills.
 					<br />
-					<br />I have a good experience with front-end languages (HTML, CSS,
-					Javascript) and frameworks (React, Next.js, Bootstrap, Ionic) along
-					with great knowledge of Python.
+					<br />I have a good experience with front-end languages (HTML, CSS, Javascript) and
+					frameworks (React, Next.js, Bootstrap, Ionic) along with great knowledge of Python.
 					<strong className='px-1'>
 						Feel free to
 						<a href='#contact-me' className=' text-primary px-1'>
 							contact me
 						</a>
-						with your requirements, I will do all my best to come upto more than
-						your expectations.
+						with your requirements, I will do all my best to come upto more than your expectations.
 					</strong>
 				</SectionComponent>
 
 				<SectionComponent title='Skills' icon='construct-outline'>
 					<ul>
+						<li>Good Knowledge of Front-end languages like CSS, HTML and Javascript</li>
 						<li>
-							Good Knowledge of Front-end languages like CSS, HTML and
-							Javascript
+							Basic Knowledge of Front-end frameworks like React.js, Next.js, Ionic (with React){" "}
 						</li>
-						<li>
-							Basic Knowledge of Front-end frameworks like React.js, Next.js,
-							Ionic (with React){" "}
-						</li>
-						<li>
-							Good Knowledge of Python (algorithms, scrap-code, automation)
-						</li>
+						<li>Good Knowledge of Python (algorithms, scrap-code, automation)</li>
 						<li>Strong base in Mathematics (as a high school student)</li>
 						<li>Firebase hosting and analytics </li>
 						<li>Comfortable with Git and Github</li>
@@ -143,26 +129,31 @@ export default function AboutPage() {
 									title={project.title}
 									description={project.description}
 									link={project.link}
-									key={project.key}></ProjectCardComponent>
+									uid={project.uid}
+									key={project.uid}></ProjectCardComponent>
 							);
 						})}
 
-						<div
-							data-aos='zoom-in-up'
-							className='card bg-dark border border-warn col-sm-8 col-md-5 col-lg-5 m-2 p-2 '>
-							<div className='card-body text-center bg-dark text-light '>
-								<div className='card-title'>
-									<h6>🔎 Explore All Projects</h6>{" "}
+						<div data-aos='zoom-in-up' className='card bg-dark border border-warn col-12 m-2 p-2 '>
+							<div className='row no-gutter'>
+								<div className='col-md-6'>
+									{" "}
+									<div className='explore-img h-100 w-100'></div>
 								</div>
-								<div className='card-text mb-5'>
-									Have a look at all my Projects.
-								</div>
-								<div className='jiggle card-link raisable btn btn-dark border border-white px-4  display-4 '>
-									<Link href='\projects'>
-										<div className='text-light '>
-											<strong> See all Projects </strong>
+								<div className='col-md-6'>
+									<div className='card-body text-center bg-dark text-light '>
+										<div className='card-title'>
+											<h6>🔎 Explore All Projects</h6>{" "}
 										</div>
-									</Link>
+										<div className='card-text mb-5'>Have a look at all my Projects.</div>
+										<div className='jiggle card-link raisable btn btn-dark border border-white px-4  display-4 '>
+											<Link href='\projects'>
+												<div className='text-light '>
+													<strong> See all Projects </strong>
+												</div>
+											</Link>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -176,21 +167,18 @@ export default function AboutPage() {
 				<SectionComponent title='Achievements' icon='trophy-sharp'>
 					<ul>
 						<li>
-							Participated in Google's kickstart competition. Solved numerous
-							algorithmic problems for the same.
+							Participated in Google's kickstart competition. Solved numerous algorithmic problems
+							for the same.
 						</li>
 						<li>Scored 8.0 Band in IELTS academic test at the age of 16. </li>
 						<li>An active member of Hack Club community.</li>
+						<li>Represented the school in various inter-school competitions.</li>
 						<li>
-							Represented the school in various inter-school competitions.
+							Participated in various stage activities in school (Debates, Quizzes, and compèring).
 						</li>
 						<li>
-							Participated in various stage activities in school (Debates,
-							Quizzes, and compèring).
-						</li>
-						<li>
-							Secured 188th position out of 3,000 participants in Global Citizen
-							Scholarship entrance exam held on 20th June 2020.
+							Secured 188th position out of 3,000 participants in Global Citizen Scholarship
+							entrance exam held on 20th June 2020.
 						</li>
 						<li>
 							Helped My friend get his{" "}
@@ -207,25 +195,23 @@ export default function AboutPage() {
 
 				<SectionComponent title=' Interests ' icon='heart-circle-sharp'>
 					<InterestComponent title="Building PWA's ">
-						While building websites, turning them into Progressive Web Apps
-						(PWA's) makes them a lot faster, reliable and engaging. You can
-						check some PWA's I've built in my{" "}
+						While building websites, turning them into Progressive Web Apps (PWA's) makes them a lot
+						faster, reliable and engaging. You can check some PWA's I've built in my{" "}
 						<Link href='/projects'>
 							<a className='text-primary mx-1'>projects section.</a>
 						</Link>
 					</InterestComponent>
 
 					<InterestComponent title=' Solving algorithmic problems '>
-						Hard programming problems are intrinsically fun to tackle. My main
-						focus is to come up with creative solutions to rather mundane
-						problems. These patterns can be found everywhere in my code.
+						Hard programming problems are intrinsically fun to tackle. My main focus is to come up
+						with creative solutions to rather mundane problems. These patterns can be found
+						everywhere in my code.
 					</InterestComponent>
 
 					<InterestComponent title=' Tech Enthusiast '>
-						I constantly keep myself updated with upcoming developments in the
-						tech industry. This has made me the de-facto person to reach out for
-						any Tech related advice and assistance amongst my friends and family
-						members.
+						I constantly keep myself updated with upcoming developments in the tech industry. This
+						has made me the de-facto person to reach out for any Tech related advice and assistance
+						amongst my friends and family members.
 					</InterestComponent>
 				</SectionComponent>
 

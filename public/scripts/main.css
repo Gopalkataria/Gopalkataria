@@ -4,13 +4,14 @@ html {
 	scroll-behavior: smooth;
 }
 
+.section:hover {
+	transform: scale(1.05, 1.05) !important ;
+}
+
 .bg-gradient {
-	background: linear-gradient(
-		45deg,
-		rgb(255, 226, 243) 1%,
-		rgb(222, 253, 255) 50%,
-		rgb(196, 255, 209) 100%
-	);
+	background-color: black;
+	background-image: url("../bg.webp");
+	/* background-size:  ; */
 	border-radius: 8px;
 	transition: 1s;
 }
@@ -20,16 +21,28 @@ img {
 }
 
 .bg-gradient:hover {
-	border-radius: 3vh ;
-		background: linear-gradient(
-		45deg,
-		rgb(255, 226, 243) 15%,
-		rgb(222, 253, 255) 50%,
-		rgb(196, 255, 209) 85%
-	);
+	border-radius: 3vh;
+
+	transform: scale(1.05, 1.05);
 }
 
-img {
+.img {
+	border-radius: 3px;
+}
+
+.explore-img {
+	background-color: rgba(255, 255, 255, 0.13);
+	background-image: url("../img/explore.webp");
+	background-size: 100% auto;
+}
+
+.card-img {
+	transition: 5s;
+}
+.card-img:hover {
+	transform: scale(1.05, 1.05);
+}
+.display-img {
 	animation: raise-animation-main-card 4s alternate infinite;
 }
 
@@ -38,7 +51,8 @@ img {
 		box-shadow: none;
 	}
 	to {
-		box-shadow: 3px 3px 8px #000000e1;
+		box-shadow: 3px 3px 8px #464646e1;
+		transform: scale(1.1, 1.1);
 	}
 }
 
@@ -55,6 +69,7 @@ img {
 }
 .raisable:hover {
 	box-shadow: 0 0 2px blue;
+	transform: scale(1.2, 1.2) !important;
 }
 
 .page-title-name {
@@ -63,25 +78,28 @@ img {
 
 a:hover,
 .jiggle:hover {
-	animation: jiggle-mode 0.2s alternate infinite;
+	animation: jiggle-mode 0.4s alternate infinite;
 }
 
 @keyframes jiggle-mode {
 	0% {
-		transform: rotate(-1deg);
+		border-radius: 2px;
+		transform: scale(1, 1);
 	}
 
 	100% {
-		transform: rotate(1deg);
+		border-radius: 5px;
+		transform: scale(1.05, 1.05);
 	}
 }
 
 .card {
-	transition: cubic-bezier(0.96, 0.25, 0.13, 0.35) 0.7s;
+	transition: 0.5s !important ;
 }
 
 .card:hover {
 	box-shadow: 3px 3px 8px #000000c2;
+	transform: scale(1.03, 1.03) !important ;
 }
 
 b,
@@ -134,10 +152,11 @@ ion-icon {
 }
 
 .projects-heading {
-	transition: 0.5s;
+	transition: 0.7s;
 }
 .projects-heading:hover {
 	box-shadow: 0 0 8px black;
+	transform: scale(1.03, 1.03);
 }
 
 .intrests {
@@ -145,4 +164,5 @@ ion-icon {
 }
 .intrests:hover {
 	box-shadow: 0 0 3px rgba(128, 128, 128, 0.931);
+	transform: scale(1.03, 1.03) !important ;
 }

@@ -34,9 +34,7 @@ export function GoHomeComponent() {
 		<div className='row'>
 			<div className='col-sm-2-4 mt-3 ml-2'>
 				<Link href='/about'>
-					<a className='text-primary border border-primary raisable p-2'>
-						Go to About Page
-					</a>
+					<a className='text-primary border border-primary raisable p-2'>Go to About Page</a>
 				</Link>
 			</div>
 		</div>
@@ -53,7 +51,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			duration: 600, // values from 0 to 3000, with step 50ms
 			easing: "ease-in-out", // animation
 			mirror: true, // do the opposite animation on prev div
-			anchorPlacement: "top-center", // defines which position of the element regarding to window should trigger the animation
+			anchorPlacement: "center-center", // defines which position of the element regarding to window should trigger the animation
 		});
 		AOS.refresh();
 	});
@@ -65,10 +63,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 				<link rel='icon' href='/G.svg' type='image/svg+xml' />
 
 				<meta data-charset='utf-8' />
-				<meta
-					name='viewport'
-					content='width=device-width, initial-scale=1, shrink-to-fit=no'
-				/>
+				<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
 
 				<meta
 					name='Description'
@@ -76,27 +71,19 @@ export function BootstrapPage(props: { title: string; children: any }) {
 				/>
 
 				{/* bootstrap css */}
-				<link
-					rel='stylesheet'
-					href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
-					integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u'
-					data-crossorigin='anonymous'>
-					{" "}
-				</link>
+				<link rel='stylesheet' href='./bootstrap/css/bootstrap.min.css' />
 			</Head>
 
 			<main>{props.children}</main>
 			{/* custom css */}
-			<link rel='stylesheet' href='/scripts/main.css?ver=1.2' />
+			<link rel='stylesheet' href='/scripts/main.css?ver=1.3' />
 
 			{/* custom fonts */}
 			<link
 				href='https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap'
 				rel='stylesheet'></link>
 
-			<link
-				href='https://unpkg.com/aos@2.3.1/dist/aos.css'
-				rel='stylesheet'></link>
+			<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'></link>
 
 			{/* 			Bootstrap scripts, use only when required
 			<script src="/bootstrap/jquery.slim.min.js"></script>
@@ -111,7 +98,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
 
 			{/* Custom javascript below */}
-			<script src='/scripts/main.js'></script>
+			<script src='/scripts/main.js?ver=1.1'></script>
 			{/* ionicons js */}
 			<script
 				type='module'
