@@ -60,7 +60,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 		<div>
 			<Head>
 				<title>{props.title}</title>
-				<link rel='icon' href='/G.svg' type='image/svg+xml' />
+				<link rel='icon' href='/favicon.ico' type='image/x-icon' />
 
 				<meta data-charset='utf-8' />
 				<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
