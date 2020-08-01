@@ -78,7 +78,7 @@ img {
 
 a:hover,
 .jiggle:hover {
-	animation: jiggle-mode 0.4s alternate infinite;
+	animation: jiggle-mode 0.4s alternate infinite !important;
 }
 
 @keyframes jiggle-mode {

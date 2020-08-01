@@ -76,7 +76,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 
 			<main>{props.children}</main>
 			{/* custom css */}
-			<link rel='stylesheet' href='/scripts/main.css?ver=1.3' />
+			<link rel='stylesheet' href='/scripts/main.css?ver=1.4' />
 
 			{/* custom fonts */}
 			<link
@@ -98,7 +98,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
 
 			{/* Custom javascript below */}
-			<script src='/scripts/main.js?ver=1.1'></script>
+			<script src='/scripts/main.js?ver=1.2'></script>
 			{/* ionicons js */}
 			<script
 				type='module'

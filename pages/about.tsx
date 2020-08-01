@@ -146,7 +146,7 @@ export default function AboutPage() {
 											<h6>🔎 Explore All Projects</h6>{" "}
 										</div>
 										<div className='card-text mb-5'>Have a look at all my Projects.</div>
-										<div className='jiggle card-link raisable btn btn-dark border border-white px-4  display-4 '>
+										<div className='jiggle card-link  btn btn-dark border border-white px-4  display-4 '>
 											<Link href='\projects'>
 												<div className='text-light '>
 													<strong> See all Projects </strong>
