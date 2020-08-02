@@ -48,6 +48,9 @@ export function ProjectCardComponent(props: Project) {
 						<a
 							href={props.link}
 							target='_blank'
+							onClick={() => {
+								firebase.analytics().logEvent(`project_${props.uid}_visited`);
+							}}
 							className=' d-flex justify-content-center card-link btn btn-raisable bg-primary text-white mt-2  stretched_link '>
 							<strong>See this 🥽 </strong>
 						</a>

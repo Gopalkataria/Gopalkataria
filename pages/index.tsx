@@ -21,6 +21,7 @@ export default function IndexPage() {
 
 declare global {
 	const AOS: any;
+	const firebase: any;
 }
 
 import Head from "next/head";
@@ -48,8 +49,8 @@ export function BootstrapPage(props: { title: string; children: any }) {
 		AOS.init({
 			disable: "phone", // disable all animations on small screens
 			offset: 60,
-			duration: 600, // values from 0 to 3000, with step 50ms
-			easing: "ease-in-out", // animation
+			duration: 900, // values from 0 to 3000, with step 50ms
+			easing: "ease", // animation
 			mirror: true, // do the opposite animation on prev div
 			anchorPlacement: "center-center", // defines which position of the element regarding to window should trigger the animation
 		});
