@@ -21,6 +21,7 @@ export default function IndexPage() {
 
 declare global {
 	const AOS: any;
+	const firebase: any;
 }
 
 import Head from "next/head";
