@@ -81,17 +81,17 @@ export default function AboutPage() {
 				<SectionComponent title={"About Me "} icon='person-outline'>
 					<strong>I am a high school student and a self-taught programmer.</strong>
 					While my main focus is web development, I love trying my hand at new languages, software
-					and frameworks. My ultimate goal is to build something transformative for the society
-					using my programming skills.
+					and frameworks.
+					<br /> My ultimate goal is to build something transformative for the society using my
+					programming skills .
 					<br />
-					<br />I have a good experience with front-end languages (HTML, CSS, Javascript) and
-					frameworks (React, Next.js, Bootstrap, Ionic) along with great knowledge of Python.
 					<strong className='px-1'>
 						Feel free to
 						<a href='#contact-me' className=' text-primary px-1'>
-							contact me
+							get in touch with me.
 						</a>
-						with your requirements, I will do all my best to come upto more than your expectations.
+						I am always open to discuss new projects 📂, creative ideas 💡 or opportunities 🎁 to
+						work with you.
 					</strong>
 				</SectionComponent>
 
