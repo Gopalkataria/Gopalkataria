@@ -95,6 +95,7 @@ a:hover,
 
 .card {
 	transition: 0.5s !important ;
+	overflow: hidden;
 }
 
 .card:hover {
