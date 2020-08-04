@@ -33,7 +33,7 @@ export function ProjectCardComponent(props: Project) {
 	return (
 		<div data-aos='zoom-in-up' className='card border border-info col-12 m-2 p-2 '>
 			<div className='row no-gutter d-flex flex-row justify-content-center'>
-				<div className='col-md-8 col-lg-6 '>
+				<div className='col-md-8 col-lg-7 col-xl-6 d-flex flex-column justify-content-center'>
 					{" "}
 					<picture className='card-img img-fluid '>
 						<source srcSet={`/img/${props.uid}.webp`} type='image/webp' />
@@ -41,7 +41,7 @@ export function ProjectCardComponent(props: Project) {
 						<img src={`/img/${props.uid}.png`} className='card-img img-fluid ' alt={props.title} />
 					</picture>
 				</div>
-				<div className='col-md-11 col-lg-6 '>
+				<div className='col-md-11 col-lg-5 col-xl-6'>
 					<div className='card-body d-flex flex-column justify-content-around '>
 						<h5 className='card-title  text-dark'>{props.title}</h5>
 						<div className='card-text'>{props.description}</div>
