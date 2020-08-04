@@ -10,7 +10,7 @@ html {
 
 .bg-gradient {
 	background-color: black;
-	background-image: url("../bg.webp");
+	background-image: url("../bg.gif");
 	/* background-size:  ; */
 	border-radius: 8px;
 	transition: 1s;
@@ -32,7 +32,7 @@ img {
 
 .explore-img {
 	background-color: rgba(255, 255, 255, 0.13);
-	background-image: url("../img/explore.webp");
+	background-image: url("../img/explore.jpg");
 	background-size: 100% auto;
 }
 

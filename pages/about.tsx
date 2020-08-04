@@ -62,10 +62,14 @@ export default function AboutPage() {
 				<div className='row d-flex justify-content-center mx-auto mt-3 p-3 bg-gradient'>
 					<div className='col-sm-8 col-md-4  mx-auto h-100 px-auto my-auto py-2 '>
 						<div className=' d-flex my-auto flex-column h-100 justify-content-center'>
-							<img
-								src='/avatar.webp'
-								alt="One of the Gopal's best pictures"
-								className='display-img img-fluid '></img>
+							<picture>
+								<source srcSet={`/avatar.webp`} className='card-img img-fluid ' type='image/webp' />
+								<source srcSet={`/avatar.jpg`} className='card-img img-fluid ' type='image/jpg' />
+								<img
+									src='/avatar.jpg'
+									alt="One of the Gopal's best pictures"
+									className='display-img img-fluid '></img>
+							</picture>
 						</div>
 					</div>
 					<div className='col-sm-6 col-md-8 col-lg-6 my-auto text-center'>

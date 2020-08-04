@@ -32,15 +32,16 @@ export interface Project {
 export function ProjectCardComponent(props: Project) {
 	return (
 		<div data-aos='zoom-in-up' className='card border border-info col-12 m-2 p-2 '>
-			<div className='row no-gutter'>
-				<div className='col-md-6'>
+			<div className='row no-gutter d-flex flex-row justify-content-center'>
+				<div className='col-md-8 col-lg-6 '>
 					{" "}
-					<img
-						src={`/img/${props.uid}.webp`}
-						alt={props.title}
-						className='card-img img-fluid '></img>
+					<picture className='card-img img-fluid '>
+						<source srcSet={`/img/${props.uid}.webp`} type='image/webp' />
+						<source srcSet={`/img/${props.uid}.png`} type='image/png' />
+						<img src={`/img/${props.uid}.png`} className='card-img img-fluid ' alt={props.title} />
+					</picture>
 				</div>
-				<div className='col-md-6'>
+				<div className='col-md-11 col-lg-6 '>
 					<div className='card-body d-flex flex-column justify-content-around '>
 						<h5 className='card-title  text-dark'>{props.title}</h5>
 						<div className='card-text'>{props.description}</div>
@@ -68,7 +69,7 @@ export const MainProjects: Project[] = [
 		uid: 1,
 		title: " My Fathers Website ",
 		description:
-			" A page built using Reactjs, Material UI, and AOS library powered by Firebase cloud functions to fetch data from a Google Sheet",
+			"My Father gives free positional tips on how to earn from online FOREX and commodity trading using a Demo account with $100K virtual money . A page built using Reactjs, Material UI, and AOS library powered by Firebase cloud functions to fetch data from a Google Sheet",
 		link: "https://adityakataria.web.app",
 	},
 	{
