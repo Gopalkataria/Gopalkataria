@@ -68,7 +68,7 @@ export const MainProjects: Project[] = [
 		uid: 1,
 		title: " My Fathers Website ",
 		description:
-			"My Father gives free positional tips on how to earn from online FOREX and commodity trading using a Demo account with $100K virtual money . A page built using Reactjs, Material UI, and AOS library powered by Firebase cloud functions to fetch data from a Google Sheet",
+			" A page built using Reactjs, Material UI, and AOS library powered by Firebase cloud functions to fetch data from a Google Sheet",
 		link: "https://adityakataria.web.app",
 	},
 	{

@@ -20,7 +20,7 @@ export function ContactLinksComponent() {
 	return (
 		<SectionComponent title='Contact me ' icon='call-sharp'>
 			<ul className='list-group ' id='contact-me'>
-				You can either message me on twitter or send me an Email. I would l❤ve to hear you and will
+				You can either message me on twitter or send me an Email. I would love to hear you and will
 				surely get back to you within 48 hours.
 				<br />
 				<strong>

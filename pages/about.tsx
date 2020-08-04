@@ -79,9 +79,9 @@ export default function AboutPage() {
 				</div>
 
 				<SectionComponent title={"About Me "} icon='person-outline'>
-					<strong>I am a high school student and a self-taught programmer.</strong>
-					While my main focus is web development, I love trying my hand at new languages, software
-					and frameworks.
+					<strong>I am a high school student 👨‍🎓 and a self-taught programmer 💻. </strong>
+					While my main focus is web development 🌎, I love trying my hand ✋ at new languages,
+					software and frameworks.
 					<br /> My ultimate goal is to build something transformative for the society using my
 					programming skills .
 					<br />
@@ -104,7 +104,7 @@ export default function AboutPage() {
 						<li>Good Knowledge of Python (algorithms, scrap-code, automation)</li>
 						<li>Strong base in Mathematics (as a high school student)</li>
 						<li>Firebase hosting and analytics </li>
-						<li>Comfortable with Git and Github</li>
+						<li> Comfortable with Git and Github</li>
 						<li>Beginner level expertise in C# and Java </li>
 						<li>A talented elocutionist</li>
 					</ul>
