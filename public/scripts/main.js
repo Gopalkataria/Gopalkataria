@@ -24,4 +24,4 @@ console.info(
 	" btw \n Copyright, Gopal Kataria ,2020 \n you can't copy my code, just take inspiration to write your own"
 );
 
-// firebase.analytics().logEvent("Page_visited");
+firebase.analytics().logEvent("Page_visited");
