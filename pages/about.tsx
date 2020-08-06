@@ -123,7 +123,7 @@ export default function AboutPage() {
 				*/}
 				<div data-aos='zoom-out-up'>
 					<div className='row d-flex justify-content-left'>
-						<h4 className='blockqoute mb-2 mt-5 col blink'>
+						<h4 className='blockqoute mb-2 mt-5 col highligh'>
 							{" "}
 							<ion-icon name='color-wand-outline' /> Recent Projects
 						</h4>
