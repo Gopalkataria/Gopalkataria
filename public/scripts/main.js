@@ -19,7 +19,9 @@ const GOPAL_KATARIA = ` %c
 
 `;
 
-console.log(GOPAL_KATARIA ,  " color: blue ; padding: 2px; border-radius:2px ; background: white ");
-console.info(" btw \n Copyright, Gopal Kataria ,2020 \n you can't copy my code, just take inspiration to write your own")
+console.log(GOPAL_KATARIA, " color: blue ; padding: 2px; border-radius:2px ; background: white ");
+console.info(
+	" btw \n Copyright, Gopal Kataria ,2020 \n you can't copy my code, just take inspiration to write your own"
+);
 
-firebase.analytics().logEvent("Page_visited")
+// firebase.analytics().logEvent("Page_visited");

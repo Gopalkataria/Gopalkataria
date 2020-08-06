@@ -32,7 +32,7 @@ export function SectionComponent(props: { children: any; title: string; icon: st
 	return (
 		<div data-aos='zoom-out-right' className='section'>
 			<div className='row d-flex justify-content-left'>
-				<h4 className='blockqoute mb-2 mt-5 col blink'>
+				<h4 className='blockqoute mb-2 mt-5 col highlight'>
 					{" "}
 					<ion-icon size='large' name={props.icon} /> {props.title}{" "}
 				</h4>
@@ -101,16 +101,18 @@ export default function AboutPage() {
 
 				<SectionComponent title='Skills' icon='construct-outline'>
 					<ul>
-						<li>Good Knowledge of Front-end languages like CSS, HTML and Javascript</li>
-						<li>
+						<li className='blink'>
+							Good Knowledge of Front-end languages like CSS, HTML and Javascript
+						</li>
+						<li className='blink'>
 							Basic Knowledge of Front-end frameworks like React.js, Next.js, Ionic (with React){" "}
 						</li>
-						<li>Good Knowledge of Python (algorithms, scrap-code, automation)</li>
-						<li>Strong base in Mathematics (as a high school student)</li>
-						<li>Firebase hosting and analytics </li>
-						<li> Comfortable with Git and Github</li>
-						<li>Beginner level expertise in C# and Java </li>
-						<li>A talented elocutionist</li>
+						<li className='blink'>Good Knowledge of Python (algorithms, scrap-code, automation)</li>
+						<li className='blink'>Strong base in Mathematics (as a high school student)</li>
+						<li className='blink'>Firebase hosting and analytics </li>
+						<li className='blink'> Comfortable with Git and Github</li>
+						<li className='blink'>Beginner level expertise in C# and Java </li>
+						<li className='blink'>A talented elocutionist</li>
 					</ul>
 				</SectionComponent>
 
@@ -170,21 +172,21 @@ export default function AboutPage() {
 
 				<SectionComponent title='Achievements' icon='trophy-sharp'>
 					<ul>
-						<li>
+						<li className='blink '>
 							Participated in Google's kickstart competition. Solved numerous algorithmic problems
 							for the same.
 						</li>
-						<li>Scored 8.0 Band in IELTS academic test at the age of 16. </li>
-						<li>An active member of Hack Club community.</li>
-						<li>Represented the school in various inter-school competitions.</li>
-						<li>
+						<li className='blink '>Scored 8.0 Band in IELTS academic test at the age of 16. </li>
+						<li className='blink '>An active member of Hack Club community.</li>
+						<li className='blink '>Represented the school in various inter-school competitions.</li>
+						<li className='blink '>
 							Participated in various stage activities in school (Debates, Quizzes, and compèring).
 						</li>
-						<li>
+						<li className='blink '>
 							Secured 188th position out of 3,000 participants in Global Citizen Scholarship
 							entrance exam held on 20th June 2020.
 						</li>
-						<li>
+						<li className='blink '>
 							Helped My friend get his{" "}
 							<a
 								href='https://david-learns-coding.github.io/Time-table/'

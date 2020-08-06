@@ -47,7 +47,7 @@ export function GoHomeComponent() {
 export function BootstrapPage(props: { title: string; children: any }) {
 	useEffect(() => {
 		AOS.init({
-			disable: "phone", // disable all animations on small screens
+			// disable: "phone", // disable all animations on small screens
 			offset: 60,
 			duration: 900, // values from 0 to 3000, with step 50ms
 			easing: "ease", // animation
