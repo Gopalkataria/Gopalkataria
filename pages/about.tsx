@@ -30,7 +30,7 @@ declare global {
 
 export function SectionComponent(props: { children: any; title: string; icon: string }) {
 	return (
-		<div data-aos='zoom-out-right' className='section'>
+		<div data-aos='fade-right' className='section'>
 			<div className='row d-flex justify-content-left'>
 				<h4 className='blockqoute mb-2 mt-5 col highlight'>
 					{" "}

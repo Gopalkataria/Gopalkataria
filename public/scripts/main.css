@@ -19,13 +19,29 @@
 
 /* Handle hover */
 ::-webkit-scrollbar-thumb:hover {
-	background-color: #000280;
-	cursor: grab;
+	background-color: #00013d;
 }
 
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
+	cursor: default;
+}
+
+.container {
+	background-color: #00000000;
+}
+
+@keyframes rainbow {
+	0% {
+		background-position: 0% 82%;
+	}
+	50% {
+		background-position: 100% 19%;
+	}
+	100% {
+		background-position: 0% 82%;
+	}
 }
 
 .section:hover {
@@ -93,7 +109,7 @@ img {
 	transform: scale(1.05, 1.05);
 }
 .display-img {
-	animation: raise-animation-main-card ease-in-out 4s alternate infinite;
+	animation: raise-animation-main-card cubic-bezier(0.68, -0.55, 0.265, 1.55) 15s alternate infinite;
 }
 
 @keyframes raise-animation-main-card {
@@ -127,12 +143,16 @@ img {
 	font-family: "Luckiest Guy", cursive;
 }
 
+.jiggle {
+	cursor: url("../cursor.png"), auto !important;
+}
+
+a {
+	cursor: url("../cursor.png"), auto !important;
+}
+
 .jiggle:hover {
 	animation: jiggle-mode 0.4s alternate infinite ease-in !important;
-}
-.jiggle::after {
-	width: 2000px;
-	height: 2000px;
 }
 
 @keyframes jiggle-mode {
@@ -209,6 +229,7 @@ ion-icon {
 	padding-left: 2rem;
 	transform: scale(1.06, 1.06);
 	background-color: rgba(255, 255, 0, 0.548);
+	cursor: url("../cursor.png"), auto !important;
 }
 
 .projects-heading {
@@ -216,12 +237,15 @@ ion-icon {
 }
 .projects-heading:hover {
 	box-shadow: 0 0 8px #000000;
-	transform: scale(1.03, 1.03);
+	content-visibility: auto;
+	transform: scale(1.05, 1.05);
 }
 
 .intrests {
 	content-visibility: auto;
 	transition: 0.6s ease-in-out;
+	scroll-snap-type: y mandatory !important;
+	scroll-snap-align: start !important;
 }
 .intrests:hover {
 	box-shadow: 0 0 3px rgba(128, 128, 128, 0.931);

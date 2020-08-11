@@ -25,3 +25,9 @@ console.info(
 );
 
 firebase.analytics().logEvent("Page_visited");
+
+window.addEventListener("resize", () => {
+	document.body.innerHTML =
+		"<br/><br/><h1> Restyling event detected, <br/> Please wait until New styles arrive. This is because the Window Size or Zoom Level changed    </h1> ";
+	location.reload();
+});

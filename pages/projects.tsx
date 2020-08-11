@@ -52,8 +52,8 @@ export function ProjectCardComponent(props: Project) {
 							onClick={() => {
 								firebase.analytics().logEvent(`project_${props.uid}_visited`);
 							}}
-							className=' d-flex justify-content-center card-link btn btn-raisable bg-primary text-white mt-2  stretched_link '>
-							<strong>See this 🥽 </strong>
+							className=' d-flex justify-content-center card-link btn btn-raisable jiggle bg-primary text-white mt-2  stretched_link '>
+							<strong>See this </strong>
 						</a>
 					</div>
 				</div>
@@ -69,7 +69,9 @@ export const MainProjects: Project[] = [
 		uid: 1,
 		title: " My Fathers Website ",
 		description:
-			"My Father gives free positional tips on how to earn from online FOREX and commodity trading using a Demo account with $100K virtual money. A page built using Reactjs, Material UI, and AOS library powered by Firebase cloud functions to fetch data from a Google Sheet",
+			// `My Father gives free positional tips on how to earn from online FOREX and commodity trading using a Demo account with $100K virtual money.
+			`A page built using Reactjs, Material UI, and AOS library powered by Firebase cloud functions to fetch data from a Google Sheet
+			`,
 		link: "https://adityakataria.web.app",
 	},
 	{
