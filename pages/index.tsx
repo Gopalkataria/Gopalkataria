@@ -76,6 +76,19 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			</Head>
 
 			<main>{props.children}</main>
+			<noscript>
+				<h1>
+					I have made this website painstakingly by working day and night. Javascript makes up an
+					essential part of the page, including animations and other important core functionality.
+					<br />
+					I think without the core functionality which I provide using Javascript, your user
+					experience on this site will not be upto the level which I want you to experience.
+					<br />
+					So as a HUMBLE request please ENABLE Javascript for my sake, at least on this web page. I
+					promise not to collect only and only analytical data which doesn't include your personal
+					information at all.
+				</h1>
+			</noscript>
 			{/* custom css */}
 			<link rel='stylesheet' href='/scripts/main.css?ver=1.6' />
 
@@ -99,7 +112,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
 
 			{/* Custom javascript below */}
-			<script src='/scripts/main.js?ver=1.4'></script>
+			<script src='/scripts/main.js?ver=1.5'></script>
 			{/* ionicons js */}
 			<script
 				type='module'
