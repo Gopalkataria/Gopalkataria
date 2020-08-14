@@ -38,7 +38,12 @@ export function ProjectCardComponent(props: Project) {
 					<picture className='card-img img-fluid '>
 						<source srcSet={`/img/${props.uid}.webp`} type='image/webp' />
 						<source srcSet={`/img/${props.uid}.png`} type='image/png' />
-						<img src={`/img/${props.uid}.png`} className='card-img img-fluid ' alt={props.title} />
+						<img
+							src={`/img/${props.uid}.png`}
+							className='card-img img-fluid '
+							alt={props.title}
+							loading='lazy'
+						/>
 					</picture>
 				</div>
 				<div className='col-md-11 col-lg-5 col-xl-6'>

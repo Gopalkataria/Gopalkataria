@@ -45,6 +45,7 @@ export function GoHomeComponent() {
 // important component for using bootstrap throughout the website over here
 
 export function BootstrapPage(props: { title: string; children: any }) {
+	// react hook for animations
 	useEffect(() => {
 		AOS.init({
 			// disable: "phone", // disable all animations on small screens
@@ -61,11 +62,13 @@ export function BootstrapPage(props: { title: string; children: any }) {
 		<div>
 			<Head>
 				<title>{props.title}</title>
+				{/*  Cool GK styles  icon  */}
 				<link rel='icon' href='/favicon.ico' type='image/x-icon' />
 
 				<meta data-charset='utf-8' />
 				<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
 
+				{/*  for crawling purposes  */}
 				<meta
 					name='Description'
 					content='Gopal Kataria : High school student, self-taught programmer. Find More information about him over here. '
@@ -75,31 +78,38 @@ export function BootstrapPage(props: { title: string; children: any }) {
 				<link rel='stylesheet' href='./bootstrap/css/bootstrap.min.css' />
 			</Head>
 
-			<main>{props.children}</main>
+			{/* emotional atyachaar to enable js */}
 			<noscript>
 				<h1>
 					I have made this website painstakingly by working day and night. Javascript makes up an
 					essential part of the page, including animations and other important core functionality.
 					<br />
+					<br />
 					I think without the core functionality which I provide using Javascript, your user
 					experience on this site will not be upto the level which I want you to experience.
 					<br />
+					<br />
 					So as a HUMBLE request please ENABLE Javascript for my sake, at least on this web page. I
-					promise not to collect only and only analytical data which doesn't include your personal
+					promise to collect only and only analytical data which doesn't include your personal
 					information at all.
 				</h1>
 			</noscript>
+
+			{/* main content of the page goes here  */}
+			<main>{props.children}</main>
+
 			{/* custom css */}
 			<link rel='stylesheet' href='/scripts/main.css?ver=1.6' />
 
-			{/* custom fonts */}
+			{/* custom fonts from Google */}
 			<link
 				href='https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap'
 				rel='stylesheet'></link>
 
+			{/* animate on scroll css - required  */}
 			<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'></link>
 
-			{/* 			Bootstrap scripts, use only when required
+			{/* 			Bootstrap scripts - not usually required
 			<script src="/bootstrap/jquery.slim.min.js"></script>
 			<script src="/bootstrap/js/bootstrap.min.js"></script> */}
 
@@ -108,17 +118,19 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<script src='/__/firebase/7.15.5/firebase-analytics.js'></script>
 			<script src='/__/firebase/init.js'></script>
 
-			{/* AOS scrolling library  */}
+			{/* AOS scrolling library javascript - required   */}
 			<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
 
-			{/* Custom javascript below */}
+			{/* Custom javascript below -- after firebase jumps in */}
 			<script src='/scripts/main.js?ver=1.5'></script>
-			{/* ionicons js */}
+			{/* ionicons js - 2 files  */}
 			<script
 				type='module'
+				async
 				src='https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js'></script>
 			<script
 				noModule={false}
+				async
 				src='https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js'></script>
 		</div>
 	);

@@ -58,7 +58,7 @@ export function InterestComponent(props: any) {
 export default function AboutPage() {
 	return (
 		<BootstrapPage title='Gopal Kataria'>
-			<div className='container' data-aos='fade'>
+			<div className='container'>
 				<div className='row d-flex justify-content-center mx-auto mt-3 p-3 bg-gradient'>
 					<div className='col-sm-8 col-md-4  mx-auto h-100 px-auto my-auto py-2 '>
 						<div className=' d-flex my-auto flex-column h-100 justify-content-center'>
@@ -68,7 +68,8 @@ export default function AboutPage() {
 								<img
 									src='/avatar.jpg'
 									alt="One of the Gopal's best pictures"
-									className='display-img img-fluid '></img>
+									className='display-img img-fluid '
+									loading='lazy'></img>
 							</picture>
 						</div>
 					</div>
