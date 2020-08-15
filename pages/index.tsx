@@ -66,6 +66,12 @@ export function BootstrapPage(props: { title: string; children: any }) {
 				<link rel='icon' href='/favicon.ico' type='image/x-icon' />
 
 				<meta data-charset='utf-8' />
+
+				{/* ownership verification fingerprint */}
+				<meta
+					name='google-site-verification'
+					content='_W5FDuxsinuC7rs-ixsDh6feSq2cSDBm4Lr23VP92Bs'
+				/>
 				<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
 
 				{/*  for crawling purposes  */}
