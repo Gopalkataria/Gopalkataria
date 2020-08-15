@@ -113,16 +113,16 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<script src="/bootstrap/jquery.slim.min.js"></script>
 			<script src="/bootstrap/js/bootstrap.min.js"></script> */}
 
-			{/* Firebase  Scripts over here  */}
-			<script src='/__/firebase/7.15.5/firebase-app.js'></script>
-			<script src='/__/firebase/7.15.5/firebase-analytics.js'></script>
-			<script src='/__/firebase/init.js'></script>
-
 			{/* AOS scrolling library javascript - required   */}
-			<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+			<script async src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+
+			{/* Firebase  Scripts over here  */}
+			<script defer src='/__/firebase/7.15.5/firebase-app.js'></script>
+			<script defer src='/__/firebase/7.15.5/firebase-analytics.js'></script>
+			<script defer src='/__/firebase/init.js'></script>
 
 			{/* Custom javascript below -- after firebase jumps in */}
-			<script src='/scripts/main.js?ver=1.5'></script>
+			<script defer src='/scripts/main.js?ver=1.5'></script>
 			{/* ionicons js - 2 files  */}
 			<script
 				type='module'
