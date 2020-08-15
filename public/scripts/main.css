@@ -28,6 +28,12 @@ html {
 	cursor: default;
 }
 
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+		"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+		"Noto Color Emoji" !important;
+}
+
 .container {
 	background-color: #00000000;
 }
@@ -103,13 +109,12 @@ img {
 
 .card-img {
 	transition: 5s ease-in-out;
-	width: 100%
-	height: 449px ;
 }
 .card-img:hover {
 	transform: scale(1.05, 1.05);
 }
 .display-img {
+	min-height: 300px;
 	animation: raise-animation-main-card cubic-bezier(0.68, -0.55, 0.265, 1.55) 15s alternate infinite;
 }
 

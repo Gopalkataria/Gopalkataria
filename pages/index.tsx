@@ -79,9 +79,6 @@ export function BootstrapPage(props: { title: string; children: any }) {
 					name='Description'
 					content='Gopal Kataria : High school student, self-taught programmer. Find More information about him over here. '
 				/>
-
-				{/* bootstrap css */}
-				<link rel='stylesheet' href='./bootstrap/css/bootstrap.min.css' />
 			</Head>
 
 			{/* emotional atyachaar to enable js */}
@@ -111,13 +108,11 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<link
 				href='https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap'
 				rel='stylesheet'></link>
-
+			<link
+				href='https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'
+				rel='stylesheet'></link>
 			{/* animate on scroll css - required  */}
 			<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'></link>
-
-			{/* 			Bootstrap scripts - not usually required
-			<script src="/bootstrap/jquery.slim.min.js"></script>
-			<script src="/bootstrap/js/bootstrap.min.js"></script> */}
 
 			{/* AOS scrolling library javascript - required   */}
 			<script async src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
