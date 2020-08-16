@@ -24,12 +24,14 @@ console.info(
 	" btw \n Copyright, Gopal Kataria ,2020 \n you can't copy my code, just take inspiration to write your own"
 );
 
+// sleep helper function
 function sleep(time) {
 	return new Promise((resolve) => {
 		window.setTimeout(resolve, time);
 	});
 }
 
+// cheching if device is a phone
 const isMobile = /Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/i.test(
 	navigator.userAgent
 );
@@ -46,4 +48,5 @@ if (!isMobile) {
 	});
 }
 
+// analytics in last
 firebase.analytics().logEvent("Page_visited");

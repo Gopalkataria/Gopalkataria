@@ -124,7 +124,7 @@ export default function AboutPage() {
 				*/}
 				<div data-aos='zoom-out-up'>
 					<div className='row d-flex justify-content-left'>
-						<h4 className='blockqoute mb-2 mt-5 col highligh'>
+						<h4 className='blockqoute mb-2 mt-5 col highlight'>
 							{" "}
 							<ion-icon name='color-wand-outline' /> Recent Projects
 						</h4>
@@ -228,19 +228,11 @@ export default function AboutPage() {
 					<div className='col-12 d-flex justify-content-center text-center'>
 						<p>
 							Made with ❤ using
-							<a
-								rel='noreferrer'
-								className='px-1 text-primary'
-								target='_blank'
-								href='https://nextjs.org/'>
+							<a rel='noreferrer' className='px-1' target='_blank' href='https://nextjs.org/'>
 								Next.js
 							</a>
 							and
-							<a
-								rel='noreferrer'
-								className='px-1 text-primary'
-								target='_blank'
-								href='https://getbootstrap.com/'>
+							<a rel='noreferrer' className='px-1' target='_blank' href='https://getbootstrap.com/'>
 								Bootstrap
 							</a>
 						</p>

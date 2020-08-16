@@ -32,6 +32,8 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
 		"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 		"Noto Color Emoji" !important;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .container {
@@ -114,7 +116,9 @@ img {
 	transform: scale(1.05, 1.05);
 }
 .display-img {
-	min-height: 300px;
+	min-height: 450px !important ;
+	width: auto !important ;
+	object-fit: none;
 	animation: raise-animation-main-card cubic-bezier(0.68, -0.55, 0.265, 1.55) 15s alternate infinite;
 }
 
@@ -123,7 +127,7 @@ img {
 		box-shadow: none;
 	}
 	to {
-		box-shadow: 3px 3px 8px #464646e1;
+		/* box-shadow: 3px 3px 8px #464646e1; */
 		transform: scale(1.1, 1.1);
 	}
 }
@@ -139,9 +143,10 @@ img {
 
 .raisable {
 	transition: 0.3s;
+	color: black !important;
 }
 .raisable:hover {
-	box-shadow: 0 0 2px blue;
+	box-shadow: 0 0 2px rgb(0, 0, 255);
 	transform: scale(1.2, 1.2) !important;
 }
 
@@ -149,15 +154,22 @@ img {
 	font-family: "Luckiest Guy", cursive;
 }
 
-.jiggle {
-	cursor: url("../cursor.png"), auto !important;
-}
-
 a {
 	cursor: url("../cursor.png"), auto !important;
 }
 
-.jiggle:hover {
+.jiggle {
+	background-color: rgb(9, 0, 92) !important ;
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover {
+	background-color: rgb(4, 0, 39) !important ;
+}
+
+.jiggle:hover,
+.jiggle:active {
+	background-color: rgb(4, 0, 39) !important ;
 	animation: jiggle-mode 0.4s alternate infinite ease-in !important;
 }
 
@@ -235,7 +247,6 @@ ion-icon {
 	padding-left: 2rem;
 	transform: scale(1.06, 1.06);
 	background-color: rgba(255, 255, 0, 0.548);
-	cursor: url("../cursor.png"), auto !important;
 }
 
 .projects-heading {
@@ -256,5 +267,5 @@ ion-icon {
 .intrests:hover {
 	box-shadow: 0 0 3px rgba(128, 128, 128, 0.931);
 	transform: scale(1.07, 1.07) !important ;
-	background-color: rgba(0, 247, 255, 0.452);
+	background-color: rgb(140, 251, 255);
 }

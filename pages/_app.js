@@ -1,4 +1,6 @@
 import "../bootstrap/css/bootstrap.min.css";
+import "../bootstrap/css/aos.css";
+
 import App from "next/app";
 
 class MyApp extends App {

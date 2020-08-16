@@ -14,14 +14,16 @@
 // "Page" but it's not a page view, it is a wrapper for pages in bootstrap
 
 import App from "./about";
+import AOS from "aos";
+
 export default function IndexPage() {
 	return <App />;
 }
 // instead of redirecting to about page borrowing and re-exporting its default component above
 
 declare global {
-	const AOS: any;
 	const firebase: any;
+	const AOS: any;
 }
 
 import Head from "next/head";
@@ -102,7 +104,10 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<main>{props.children}</main>
 
 			{/* custom css */}
-			<link rel='stylesheet' href='/scripts/main.css?ver=1.6' />
+			<link rel='stylesheet' href='/scripts/main.css?ver=1.9' />
+
+			{/* aos css - required deffered loading  */}
+			<link rel='stylesheet' href='/scripts/aos.css?ver=1.7' />
 
 			{/* custom fonts from Google */}
 			<link
@@ -111,11 +116,8 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<link
 				href='https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'
 				rel='stylesheet'></link>
-			{/* animate on scroll css - required  */}
-			<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'></link>
-
-			{/* AOS scrolling library javascript - required   */}
-			<script async src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+			{/* animate on scroll css - required
+			<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'></link> */}
 
 			{/* Firebase  Scripts over here  */}
 			<script defer src='/__/firebase/7.15.5/firebase-app.js'></script>
@@ -123,7 +125,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<script defer src='/__/firebase/init.js'></script>
 
 			{/* Custom javascript below -- after firebase jumps in */}
-			<script defer src='/scripts/main.js?ver=1.5'></script>
+			<script defer src='/scripts/main.js?ver=1.7'></script>
 			{/* ionicons js - 2 files  */}
 			<script
 				type='module'

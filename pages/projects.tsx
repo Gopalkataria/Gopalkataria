@@ -54,6 +54,7 @@ export function ProjectCardComponent(props: Project) {
 						<a
 							href={props.link}
 							target='_blank'
+							rel='noreferrer'
 							onClick={() => {
 								firebase.analytics().logEvent(`project_${props.uid}_visited`);
 							}}
