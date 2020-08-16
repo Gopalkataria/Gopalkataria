@@ -258,13 +258,13 @@ ion-icon {
 	transform: scale(1.05, 1.05);
 }
 
-.intrests {
+.interests {
 	content-visibility: auto;
 	transition: 0.6s ease-in-out;
 	scroll-snap-type: y mandatory !important;
 	scroll-snap-align: start !important;
 }
-.intrests:hover {
+.interests:hover {
 	box-shadow: 0 0 3px rgba(128, 128, 128, 0.931);
 	transform: scale(1.07, 1.07) !important ;
 	background-color: rgb(140, 251, 255);

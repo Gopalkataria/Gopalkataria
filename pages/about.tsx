@@ -46,7 +46,7 @@ export function SectionComponent(props: { children: any; title: string; icon: st
 
 export function InterestComponent(props: any) {
 	return (
-		<div data-aos='flip-left' className='m-2 p-2 intrests'>
+		<div data-aos='flip-left' className='m-2 p-2 interests'>
 			<strong> {props.title} </strong> <br />
 			{props.children}
 		</div>
