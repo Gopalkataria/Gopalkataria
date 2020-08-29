@@ -34,52 +34,237 @@ bootstrap/css/bootstrap-grid.css
 bootstrap/css/bootstrap-grid.css.map
 bootstrap/css/bootstrap-grid.min.css.map
 bootstrap/css/bootstrap-grid.min.css.map
-bootstrap/css/bootstrap.css
-bootstrap/css/bootstrap.min.css.map
 bootstrap/css/bootstrap-reboot.css.map
 bootstrap/css/bootstrap-reboot.css.map
 .gitignore
 bootstrap/
 .gitignore
-pages/bootstrap/jquery.slim.min.js
-pages/bootstrap/css/bootstrap-grid.css
-pages/bootstrap/css/bootstrap-grid.css.map
-pages/bootstrap/css/bootstrap-grid.min.css
-pages/bootstrap/css/bootstrap-grid.min.css.map
-pages/bootstrap/css/bootstrap-reboot.css
-pages/bootstrap/css/bootstrap-reboot.css.map
-pages/bootstrap/css/bootstrap-reboot.min.css
-pages/bootstrap/css/bootstrap-reboot.min.css.map
-pages/bootstrap/css/bootstrap.css
-pages/bootstrap/css/bootstrap.css.map
-pages/bootstrap/css/bootstrap.min.css
-pages/bootstrap/css/bootstrap.min.css.map
-pages/bootstrap/js/bootstrap.bundle.js
-pages/bootstrap/js/bootstrap.bundle.js.map
-pages/bootstrap/js/bootstrap.bundle.min.js
-pages/bootstrap/js/bootstrap.bundle.min.js.map
-pages/bootstrap/js/bootstrap.js
-pages/bootstrap/js/bootstrap.js.map
-pages/bootstrap/js/bootstrap.min.js
-pages/bootstrap/js/bootstrap.min.js.map
-pages/bootstrap/jquery.slim.min.js
-pages/bootstrap/css/bootstrap-grid.css
-pages/bootstrap/css/bootstrap-grid.css.map
-pages/bootstrap/css/bootstrap-grid.min.css
-pages/bootstrap/css/bootstrap-grid.min.css.map
-pages/bootstrap/css/bootstrap-reboot.css
-pages/bootstrap/css/bootstrap-reboot.css.map
-pages/bootstrap/css/bootstrap-reboot.min.css
-pages/bootstrap/css/bootstrap-reboot.min.css.map
-pages/bootstrap/css/bootstrap.css
-pages/bootstrap/css/bootstrap.css.map
-pages/bootstrap/css/bootstrap.min.css
-pages/bootstrap/css/bootstrap.min.css.map
-pages/bootstrap/js/bootstrap.bundle.js
-pages/bootstrap/js/bootstrap.bundle.js.map
-pages/bootstrap/js/bootstrap.bundle.min.js
-pages/bootstrap/js/bootstrap.bundle.min.js.map
-pages/bootstrap/js/bootstrap.js
-pages/bootstrap/js/bootstrap.js.map
-pages/bootstrap/js/bootstrap.min.js
-pages/bootstrap/js/bootstrap.min.js.map
+out copy/404.html
+out copy/about.html
+out copy/avatar.jpg
+out copy/avatar.webp
+out copy/contact.html
+out copy/cursor.png
+out copy/favicon.ico
+out copy/index.html
+out copy/projects.html
+out copy/robots.txt
+out copy/_next/static/1rd8vIzjjXNvSyTdHP1aG/_buildManifest.js
+out copy/_next/static/1rd8vIzjjXNvSyTdHP1aG/_ssgManifest.js
+out copy/_next/static/1rd8vIzjjXNvSyTdHP1aG/pages/_app.js
+out copy/_next/static/1rd8vIzjjXNvSyTdHP1aG/pages/_error.js
+out copy/_next/static/1rd8vIzjjXNvSyTdHP1aG/pages/about.js
+out copy/_next/static/1rd8vIzjjXNvSyTdHP1aG/pages/contact.js
+out copy/_next/static/1rd8vIzjjXNvSyTdHP1aG/pages/index.js
+out copy/_next/static/1rd8vIzjjXNvSyTdHP1aG/pages/projects.js
+out copy/_next/static/9mYDAsjmctwbG6yV-a0uW/_buildManifest.js
+out copy/_next/static/9mYDAsjmctwbG6yV-a0uW/_ssgManifest.js
+out copy/_next/static/9mYDAsjmctwbG6yV-a0uW/pages/_app.js
+out copy/_next/static/9mYDAsjmctwbG6yV-a0uW/pages/_error.js
+out copy/_next/static/9mYDAsjmctwbG6yV-a0uW/pages/about.js
+out copy/_next/static/9mYDAsjmctwbG6yV-a0uW/pages/contact.js
+out copy/_next/static/9mYDAsjmctwbG6yV-a0uW/pages/index.js
+out copy/_next/static/9mYDAsjmctwbG6yV-a0uW/pages/projects.js
+out copy/_next/static/Bxz1si4GP1N8JjXR9abhp/_buildManifest.js
+out copy/_next/static/Bxz1si4GP1N8JjXR9abhp/_ssgManifest.js
+out copy/_next/static/Bxz1si4GP1N8JjXR9abhp/pages/_app.js
+out copy/_next/static/Bxz1si4GP1N8JjXR9abhp/pages/_error.js
+out copy/_next/static/Bxz1si4GP1N8JjXR9abhp/pages/about.js
+out copy/_next/static/Bxz1si4GP1N8JjXR9abhp/pages/contact.js
+out copy/_next/static/Bxz1si4GP1N8JjXR9abhp/pages/index.js
+out copy/_next/static/Bxz1si4GP1N8JjXR9abhp/pages/projects.js
+out copy/_next/static/Dj2dZ-RKOcByBfCDWsv5r/_buildManifest.js
+out copy/_next/static/Dj2dZ-RKOcByBfCDWsv5r/_ssgManifest.js
+out copy/_next/static/Dj2dZ-RKOcByBfCDWsv5r/pages/_app.js
+out copy/_next/static/Dj2dZ-RKOcByBfCDWsv5r/pages/_error.js
+out copy/_next/static/Dj2dZ-RKOcByBfCDWsv5r/pages/about.js
+out copy/_next/static/Dj2dZ-RKOcByBfCDWsv5r/pages/contact.js
+out copy/_next/static/Dj2dZ-RKOcByBfCDWsv5r/pages/index.js
+out copy/_next/static/Dj2dZ-RKOcByBfCDWsv5r/pages/projects.js
+out copy/_next/static/EmXQWejdK8bqWBMMu0KlR/_buildManifest.js
+out copy/_next/static/EmXQWejdK8bqWBMMu0KlR/_ssgManifest.js
+out copy/_next/static/EmXQWejdK8bqWBMMu0KlR/pages/_app.js
+out copy/_next/static/EmXQWejdK8bqWBMMu0KlR/pages/_error.js
+out copy/_next/static/EmXQWejdK8bqWBMMu0KlR/pages/about.js
+out copy/_next/static/EmXQWejdK8bqWBMMu0KlR/pages/contact.js
+out copy/_next/static/EmXQWejdK8bqWBMMu0KlR/pages/index.js
+out copy/_next/static/EmXQWejdK8bqWBMMu0KlR/pages/projects.js
+out copy/_next/static/HBObkeXhCa_ScMcI5TRcZ/_buildManifest.js
+out copy/_next/static/HBObkeXhCa_ScMcI5TRcZ/_ssgManifest.js
+out copy/_next/static/HBObkeXhCa_ScMcI5TRcZ/pages/_app.js
+out copy/_next/static/HBObkeXhCa_ScMcI5TRcZ/pages/_error.js
+out copy/_next/static/HBObkeXhCa_ScMcI5TRcZ/pages/about.js
+out copy/_next/static/HBObkeXhCa_ScMcI5TRcZ/pages/contact.js
+out copy/_next/static/HBObkeXhCa_ScMcI5TRcZ/pages/index.js
+out copy/_next/static/HBObkeXhCa_ScMcI5TRcZ/pages/projects.js
+out copy/_next/static/IlZ4Xc2nvsMFM0nGSguI4/_buildManifest.js
+out copy/_next/static/IlZ4Xc2nvsMFM0nGSguI4/_ssgManifest.js
+out copy/_next/static/IlZ4Xc2nvsMFM0nGSguI4/pages/_app.js
+out copy/_next/static/IlZ4Xc2nvsMFM0nGSguI4/pages/_error.js
+out copy/_next/static/IlZ4Xc2nvsMFM0nGSguI4/pages/about.js
+out copy/_next/static/IlZ4Xc2nvsMFM0nGSguI4/pages/contact.js
+out copy/_next/static/IlZ4Xc2nvsMFM0nGSguI4/pages/index.js
+out copy/_next/static/IlZ4Xc2nvsMFM0nGSguI4/pages/projects.js
+out copy/_next/static/L3rilt6PLzXYfITEuuH_b/_buildManifest.js
+out copy/_next/static/L3rilt6PLzXYfITEuuH_b/_ssgManifest.js
+out copy/_next/static/L3rilt6PLzXYfITEuuH_b/pages/_app.js
+out copy/_next/static/L3rilt6PLzXYfITEuuH_b/pages/_error.js
+out copy/_next/static/L3rilt6PLzXYfITEuuH_b/pages/about.js
+out copy/_next/static/L3rilt6PLzXYfITEuuH_b/pages/contact.js
+out copy/_next/static/L3rilt6PLzXYfITEuuH_b/pages/index.js
+out copy/_next/static/L3rilt6PLzXYfITEuuH_b/pages/projects.js
+out copy/_next/static/MDc_6bJ2ToWPGg-UhG7Jx/_buildManifest.js
+out copy/_next/static/MDc_6bJ2ToWPGg-UhG7Jx/_ssgManifest.js
+out copy/_next/static/MDc_6bJ2ToWPGg-UhG7Jx/pages/_app.js
+out copy/_next/static/MDc_6bJ2ToWPGg-UhG7Jx/pages/_error.js
+out copy/_next/static/MDc_6bJ2ToWPGg-UhG7Jx/pages/about.js
+out copy/_next/static/MDc_6bJ2ToWPGg-UhG7Jx/pages/contact.js
+out copy/_next/static/MDc_6bJ2ToWPGg-UhG7Jx/pages/index.js
+out copy/_next/static/MDc_6bJ2ToWPGg-UhG7Jx/pages/projects.js
+out copy/_next/static/NMa0CzU2IjvYfUrd0T_-M/_buildManifest.js
+out copy/_next/static/NMa0CzU2IjvYfUrd0T_-M/_ssgManifest.js
+out copy/_next/static/NMa0CzU2IjvYfUrd0T_-M/pages/_app.js
+out copy/_next/static/NMa0CzU2IjvYfUrd0T_-M/pages/_error.js
+out copy/_next/static/NMa0CzU2IjvYfUrd0T_-M/pages/about.js
+out copy/_next/static/NMa0CzU2IjvYfUrd0T_-M/pages/contact.js
+out copy/_next/static/NMa0CzU2IjvYfUrd0T_-M/pages/index.js
+out copy/_next/static/NMa0CzU2IjvYfUrd0T_-M/pages/projects.js
+out copy/_next/static/Phs4I2pkx3eUnlBnVxtrn/_buildManifest.js
+out copy/_next/static/Phs4I2pkx3eUnlBnVxtrn/_ssgManifest.js
+out copy/_next/static/Phs4I2pkx3eUnlBnVxtrn/pages/_app.js
+out copy/_next/static/Phs4I2pkx3eUnlBnVxtrn/pages/_error.js
+out copy/_next/static/Phs4I2pkx3eUnlBnVxtrn/pages/about.js
+out copy/_next/static/Phs4I2pkx3eUnlBnVxtrn/pages/contact.js
+out copy/_next/static/Phs4I2pkx3eUnlBnVxtrn/pages/index.js
+out copy/_next/static/Phs4I2pkx3eUnlBnVxtrn/pages/projects.js
+out copy/_next/static/chunks/0.js
+out copy/_next/static/chunks/0d5eb56d5f0c5f4be54b635db299ffc9881f4459.6f92efaac760a02a5b08.js
+out copy/_next/static/chunks/14d882a382647da68029c7f55b56da315118937b.5f711b442e34f5649a76.js
+out copy/_next/static/chunks/17a21be7f407e5bef077c13229f4b7f8095cd4e4.2a52090ba53b4f2dac0a.js
+out copy/_next/static/chunks/0327a006937ae338f563d1719581f36c962fa465.2a52090ba53b4f2dac0a.js
+out copy/_next/static/chunks/5552a0497a064ffede53ee4787c26eb6c92b505c.92fcaac15fbcca7798fa.js
+out copy/_next/static/chunks/42903eb5.e05b9cac0aab3e16d0b1.js
+out copy/_next/static/chunks/54496ff5f91e179adf830e8430546fd238902358.6f92efaac760a02a5b08.js
+out copy/_next/static/chunks/297479d0a594aa3758bdbf6eb89e3e08596413da.19bd324bd21caea56bce.js
+out copy/_next/static/chunks/855130d3f68eb250c1823bee550df225c7c78cab.7805dc493d46ea5841b3.js
+out copy/_next/static/chunks/a2028e3a4554f15083e251350cf377c2a95a050c.684ad3b0656ffb199816.js
+out copy/_next/static/chunks/c58d13e00a40536beb2a7ad9dc8222c9d5f9e0dc.bdcb8aec259d6a7f61e8.js
+out copy/_next/static/chunks/c6697313a95893fafe545783eea6a93af3ecfb7c.afec13e5d0a9a66c6b5e.js
+out copy/_next/static/chunks/commons.34684228d50c6c140f9e.js
+out copy/_next/static/chunks/d20dc7e597780e6cf53ed3abe7b3f25a9128403f.ec6d3748eaaa58a9354c.js
+out copy/_next/static/chunks/e16fdf378193d5fa54d3bff80fda9f48f9c019f3.8f1fb96567eb6f93fdf7.js
+out copy/_next/static/chunks/ecb7c94fc3fdd1f3c6a1e6fdf403327f11cc9d02.bdcb8aec259d6a7f61e8.js
+out copy/_next/static/chunks/framework.e84fa698c7ee940652bd.js
+out copy/_next/static/chunks/styles.07e92cfb1fbddd5d2c2f.js
+out copy/_next/static/chunks/styles.389bad2275858f7e0154.js
+out copy/_next/static/chunks/styles.js
+out copy/_next/static/css/42903eb5.ee86f230.chunk.css
+out copy/_next/static/css/styles.67c1ec36.chunk.css
+out copy/_next/static/css/styles.chunk.css
+out copy/_next/static/development/_buildManifest.js
+out copy/_next/static/development/_ssgManifest.js
+out copy/_next/static/development/dll/dll_f9de5cbc314a1e41f91e.js
+out copy/_next/static/development/dll/dll_f9de5cbc314a1e41f91e.js.map
+out copy/_next/static/development/pages/_app.js
+out copy/_next/static/development/pages/_error.js
+out copy/_next/static/development/pages/index.js
+out copy/_next/static/development/pages/projects.js
+out copy/_next/static/development/pages/next/dist/pages/_error.js
+out copy/_next/static/g525dCKj3D4vWgb3n6Cnv/_buildManifest.js
+out copy/_next/static/g525dCKj3D4vWgb3n6Cnv/_ssgManifest.js
+out copy/_next/static/g525dCKj3D4vWgb3n6Cnv/pages/_app.js
+out copy/_next/static/g525dCKj3D4vWgb3n6Cnv/pages/_error.js
+out copy/_next/static/g525dCKj3D4vWgb3n6Cnv/pages/about.js
+out copy/_next/static/g525dCKj3D4vWgb3n6Cnv/pages/contact.js
+out copy/_next/static/g525dCKj3D4vWgb3n6Cnv/pages/index.js
+out copy/_next/static/g525dCKj3D4vWgb3n6Cnv/pages/projects.js
+out copy/_next/static/k5069Achn8DhklwVnUgzS/_buildManifest.js
+out copy/_next/static/k5069Achn8DhklwVnUgzS/_ssgManifest.js
+out copy/_next/static/k5069Achn8DhklwVnUgzS/pages/_app.js
+out copy/_next/static/k5069Achn8DhklwVnUgzS/pages/_error.js
+out copy/_next/static/k5069Achn8DhklwVnUgzS/pages/about.js
+out copy/_next/static/k5069Achn8DhklwVnUgzS/pages/contact.js
+out copy/_next/static/k5069Achn8DhklwVnUgzS/pages/index.js
+out copy/_next/static/k5069Achn8DhklwVnUgzS/pages/projects.js
+out copy/_next/static/runtime/amp.js
+out copy/_next/static/runtime/main-54bbc6f5114b2beb7db2.js
+out copy/_next/static/runtime/main.js
+out copy/_next/static/runtime/polyfills-956d2d13be906d60c371.js
+out copy/_next/static/runtime/polyfills.js
+out copy/_next/static/runtime/react-refresh.js
+out copy/_next/static/runtime/webpack-83bd83ab777f80a6c75c.js
+out copy/_next/static/runtime/webpack.js
+out copy/_next/static/t2UB1EKr7F_Ew2H1JAe51/_buildManifest.js
+out copy/_next/static/t2UB1EKr7F_Ew2H1JAe51/_ssgManifest.js
+out copy/_next/static/t2UB1EKr7F_Ew2H1JAe51/pages/_app.js
+out copy/_next/static/t2UB1EKr7F_Ew2H1JAe51/pages/_error.js
+out copy/_next/static/t2UB1EKr7F_Ew2H1JAe51/pages/about.js
+out copy/_next/static/t2UB1EKr7F_Ew2H1JAe51/pages/contact.js
+out copy/_next/static/t2UB1EKr7F_Ew2H1JAe51/pages/index.js
+out copy/_next/static/t2UB1EKr7F_Ew2H1JAe51/pages/projects.js
+out copy/_next/static/webpack/0b51fc1ad7c5140dde25.hot-update.json
+out copy/_next/static/webpack/2e1494b9403bca395211.hot-update.json
+out copy/_next/static/webpack/5ee6d7d1a4251adcdc1c.hot-update.json
+out copy/_next/static/webpack/6da14ed03e15a71eac9e.hot-update.json
+out copy/_next/static/webpack/6e2840e57e41dbb01e9f.hot-update.json
+out copy/_next/static/webpack/37dbbb682aeb378f4187.hot-update.json
+out copy/_next/static/webpack/60a5cc6673d32623b5c4.hot-update.json
+out copy/_next/static/webpack/0480d7ba64ed993b422c.hot-update.json
+out copy/_next/static/webpack/713af2314ff659ba0bac.hot-update.json
+out copy/_next/static/webpack/7186d9a6202955e36d47.hot-update.json
+out copy/_next/static/webpack/473223ff59c9f0a5c956.hot-update.json
+out copy/_next/static/webpack/2025714b29351234f2ca.hot-update.json
+out copy/_next/static/webpack/266742126a8e3cce5f5d.hot-update.json
+out copy/_next/static/webpack/a3b0bbc903e7c120b9e5.hot-update.json
+out copy/_next/static/webpack/a040bbdc0efcb125ae31.hot-update.json
+out copy/_next/static/webpack/bd04110873eb3169327f.hot-update.json
+out copy/_next/static/webpack/c5c8ce7187f1460edcd6.hot-update.json
+out copy/_next/static/webpack/c77821c02400b711b9f8.hot-update.json
+out copy/_next/static/webpack/cf72d17be0efcafb3045.hot-update.json
+out copy/_next/static/webpack/d1bc06e5ccee5099cb3b.hot-update.json
+out copy/_next/static/webpack/d842972a55657e445d07.hot-update.json
+out copy/_next/static/webpack/eb78a6b1d9296edac6e2.hot-update.json
+out copy/_next/static/webpack/f2eec23032247316cba0.hot-update.json
+out copy/_next/static/webpack/f08b46ffe76d7fc10d14.hot-update.json
+out copy/_next/static/webpack/f9d25898a71ec7344836.hot-update.json
+out copy/_next/static/webpack/feb4f44ca255f888eadc.hot-update.json
+out copy/_next/static/webpack/styles.5ee6d7d1a4251adcdc1c.hot-update.js
+out copy/_next/static/webpack/styles.0480d7ba64ed993b422c.hot-update.js
+out copy/_next/static/webpack/styles.cf72d17be0efcafb3045.hot-update.js
+out copy/_next/static/webpack/static/development/pages/_app.js.5ee6d7d1a4251adcdc1c.hot-update.js
+out copy/_next/static/webpack/static/development/pages/_app.js.0480d7ba64ed993b422c.hot-update.js
+out copy/_next/static/webpack/static/development/pages/_app.js.cf72d17be0efcafb3045.hot-update.js
+out copy/_next/static/webpack/static/development/pages/index.js.6e2840e57e41dbb01e9f.hot-update.js
+out copy/_next/static/webpack/static/development/pages/index.js.37dbbb682aeb378f4187.hot-update.js
+out copy/_next/static/webpack/static/development/pages/index.js.f2eec23032247316cba0.hot-update.js
+out copy/_next/static/webpack/static/development/pages/index.js.feb4f44ca255f888eadc.hot-update.js
+out copy/img/1.png
+out copy/img/1.webp
+out copy/img/2.png
+out copy/img/2.webp
+out copy/img/3.png
+out copy/img/3.webp
+out copy/img/10.png
+out copy/img/10.webp
+out copy/img/11.png
+out copy/img/11.webp
+out copy/img/12.png
+out copy/img/12.webp
+out copy/img/13.png
+out copy/img/13.webp
+out copy/img/14.png
+out copy/img/14.webp
+out copy/img/15.png
+out copy/img/15.webp
+out copy/img/16.png
+out copy/img/16.webp
+out copy/img/17.png
+out copy/img/17.webp
+out copy/img/explore.jpg
+out copy/img/explore.webp
+out copy/scripts/aos.css
+out copy/scripts/aos.js
+out copy/scripts/main.css
+out copy/scripts/main.js
+out copy/scripts/pace.css
+out copy/scripts/pace.js
