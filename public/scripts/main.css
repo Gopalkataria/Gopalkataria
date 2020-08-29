@@ -81,22 +81,20 @@ ul {
 	}
 }
 
-.bg-gradient {
+.head-bg-wrap {
 	background-color: #000000;
-
-	background-image: url("../bg.webp");
 	border-radius: 8px;
 	transition: 1s;
 }
 
-img {
-	transition: ease-in-out 1s;
+.bg-gradient {
+	border-radius: 8px;
+	transition: 10s;
+	backdrop-filter: blur(2px);
 }
 
-.bg-gradient:hover {
-	border-radius: 3vh;
-
-	transform: scale(1.05, 1.05);
+img {
+	transition: ease-in-out 1s;
 }
 
 .img {
@@ -127,8 +125,7 @@ img {
 		box-shadow: none;
 	}
 	to {
-		/* box-shadow: 3px 3px 8px #464646e1; */
-		transform: scale(1.1, 1.1);
+		box-shadow: 0px 0px 13px #bebebe;
 	}
 }
 

@@ -59,27 +59,25 @@ export default function AboutPage() {
 	return (
 		<BootstrapPage title='Gopal Kataria'>
 			<div className='container'>
-				<div className='row d-flex justify-content-center mx-auto mt-3 p-3 bg-gradient'>
-					<div className='col-sm-8 col-md-4  mx-auto h-100 px-auto my-auto py-2 '>
-						<div className=' d-flex my-auto flex-column h-100 justify-content-center'>
-							<picture>
-								<source srcSet={`/avatar.webp`} className='card-img img-fluid ' type='image/webp' />
-								<source srcSet={`/avatar.jpg`} className='card-img img-fluid ' type='image/jpg' />
+				<div className='head-bg-wrap'>
+					<div className='row d-flex justify-content-center mx-auto mt-3 p-3 bg-gradient'>
+						<div className='col-sm-8 col-md-4  mx-auto h-100 px-auto my-auto py-2 '>
+							<div className=' d-flex my-auto flex-column h-100 justify-content-center'>
 								<img
 									src='/avatar.jpg'
 									alt="One of the Gopal's best pictures"
 									className='display-img img-fluid '
 									loading='lazy'></img>
-							</picture>
+							</div>
 						</div>
-					</div>
-					<div className='col-sm-6 col-md-8 col-lg-6 my-auto text-center'>
-						<h1 className='  display-4 text-light'>
-							{" "}
-							<b>Gopal Kataria</b>
-						</h1>
-						<h4 className='text-light '>High school student</h4>
-						<h4 className='text-light'>Born in 2004</h4>
+						<div className='col-sm-6 col-md-8 col-lg-6 my-auto text-center'>
+							<h1 className='  display-4 text-light'>
+								{" "}
+								<b>Gopal Kataria</b>
+							</h1>
+							<h4 className='text-light '>High school student</h4>
+							<h4 className='text-light'>Born in 2004</h4>
+						</div>
 					</div>
 				</div>
 
