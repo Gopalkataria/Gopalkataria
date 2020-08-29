@@ -104,20 +104,28 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<main>{props.children}</main>
 
 			{/* custom css */}
-			<link rel='stylesheet' href='/scripts/main.css?ver=1.9' />
-
-			{/* aos css - required deffered loading  */}
-			<link rel='stylesheet' href='/scripts/aos.css?ver=1.7' />
+			<link rel='preload' href='/scripts/main.css?ver=1.11' as='style' />
+			<link rel='stylesheet' href='/scripts/main.css?ver=1.11' />
+			{/* aos css */}
+			<link rel='preload' href='/scripts/aos.css?ver=1.91' as='style' />
 
 			{/* custom fonts from Google */}
 			<link
 				href='https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap'
-				rel='stylesheet'></link>
+				rel='preload'></link>
+			<link
+				rel='stylesheet'
+				href='https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap'
+			/>
 			<link
 				href='https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'
-				rel='stylesheet'></link>
-			{/* animate on scroll css - required
-			<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'></link> */}
+				rel='preload'></link>
+			<link
+				rel='stylesheet'
+				href='https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'
+			/>
+			{/* animate on scroll css - required */}
+			<link rel='stylesheet' href='/scripts/aos.css?ver=1.91' />
 
 			{/* Firebase  Scripts over here  */}
 			<script defer src='/__/firebase/7.15.5/firebase-app.js'></script>
