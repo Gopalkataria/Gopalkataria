@@ -71,15 +71,7 @@ export function ProjectCardComponent(props: Project) {
 export const MainProjects: Project[] = [
 	// all project keys are UNIQUE
 	// only three projects here
-	{
-		uid: 1,
-		title: " My Fathers Website ",
-		description:
-			// `My Father gives free positional tips on how to earn from online FOREX and commodity trading using a Demo account with $100K virtual money.
-			`A page built using Reactjs, Material UI, and AOS library powered by Firebase cloud functions to fetch data from a Google Sheet
-			`,
-		link: "https://adityakataria.web.app",
-	},
+
 	{
 		uid: 2,
 		title: " My Portfolio Page ",
@@ -129,35 +121,7 @@ const OtherProjects: Project[] = [
 			" Notepy is a notepad clone written in Python. It's real power lies in customization. Everything from ribbons to menus can be easily customized by changing the code, though you need to figure out how it works first",
 		link: "https://github.com/Gopalkataria/Notepad-for-pythonists",
 	},
-	{
-		uid: 14,
-		title: " Cryptography Algorithms ",
-		description:
-			"Python Algorithm to encrypt/decrypt text using numerical keys text is encrypted multiple times with different techniques depending on no. of digits in the keys.",
-		link: "https://github.com/Gopalkataria/Cryptography",
-	},
-	{
-		uid: 13,
-		title: " Finding square roots",
-		description:
-			" An algorithm written in python to find square roots of positive whole numbers. Can find values of square roots of numbers upto ten thousand decimal places accurately ",
-		link: "https://github.com/Gopalkataria/square-root/",
-	},
 
-	{
-		uid: 11,
-		title: " Cryptography Algorithms - Java ",
-		description:
-			"If you are sending secret messages, You need to check this. Written in java so that Android developers could benefit from it. Purposely made hard to read. ",
-		link: "https://github.com/Gopalkataria/ceaser-cipher-java",
-	},
-	{
-		uid: 10,
-		title: " Finding Prime Numbers - Java ",
-		description:
-			"Let's find some prime numbers, maybe a few thousand. Algorithm isn't as complicated as the language. ",
-		link: "https://github.com/Gopalkataria/Prime-Numbers-Java",
-	},
 ];
 
 const AllProjects: Project[] = MainProjects.concat(OtherProjects);
