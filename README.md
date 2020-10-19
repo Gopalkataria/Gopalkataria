@@ -1,4 +1,4 @@
-[![Gopal Kataria](https://raw.githubusercontent.com/Gopalkataria/Gopalkataria/master/screenshot.gif)]( https://gopalkataria.web.app/)
+
 
 
 # Who am I ?
