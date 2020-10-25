@@ -1,4 +1,3 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Gopalkataria/Gopalkataria)
 
 
 
@@ -16,13 +15,15 @@
 # what do I Do ?
 * Websites using Front-end frameworks like React.js, Next.js, Ionic (with React)
 * Make non sophisticated yet powerful algorithms
-* Automate stuff using Powershell and Python 
+* Automate stuff using Powershell and Python
 * Love Maths ( until now at least )
 
 
 # Do you wanna chat  ?
-####  Feel free to [contact me.]( https://gopalkataria.web.app/contact),and I love reading casually written E-mails. I would be happy to discuss project ideas and opportunities with you. 
+####  Feel free to [contact me.]( https://gopalkataria.web.app/contact),and I love reading casually written E-mails. I would be happy to discuss project ideas and opportunities with you.
 
 
 
 
+
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Gopalkataria/Gopalkataria)

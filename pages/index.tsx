@@ -104,8 +104,8 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<main>{props.children}</main>
 
 			{/* custom css */}
-			<link rel='preload' href='/scripts/main.css?ver=1.11' as='style' />
-			<link rel='stylesheet' href='/scripts/main.css?ver=1.11' />
+			<link rel='preload' href='/scripts/main.css?ver=1.12' as='style' />
+			<link rel='stylesheet' href='/scripts/main.css?ver=1.12' />
 			{/* aos css */}
 			<link rel='preload' href='/scripts/aos.css?ver=1.91' as='style' />
 
@@ -133,7 +133,7 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			<script defer src='/__/firebase/init.js'></script>
 
 			{/* Custom javascript below -- after firebase jumps in */}
-			<script defer src='/scripts/main.js?ver=1.7'></script>
+			<script defer src='/scripts/main.js?ver=1.8'></script>
 			{/* ionicons js - 2 files  */}
 			<script
 				type='module'
