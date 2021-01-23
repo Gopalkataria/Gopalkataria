@@ -86,17 +86,9 @@ export function BootstrapPage(props: { title: string; children: any }) {
 			{/* emotional atyachaar to enable js */}
 			<noscript>
 				<h1>
-					I have made this website painstakingly by working day and night. Javascript makes up an
-					essential part of the page, including animations and other important core functionality.
+					Your Javascript is disabled, which my website depends upon, so either enable it or forget about it 
 					<br />
-					<br />
-					I think without the core functionality which I provide using Javascript, your user
-					experience on this site will not be upto the level which I want you to experience.
-					<br />
-					<br />
-					So as a HUMBLE request please ENABLE Javascript for my sake, at least on this web page. I
-					promise to collect only and only analytical data which doesn't include your personal
-					information at all.
+					
 				</h1>
 			</noscript>
 

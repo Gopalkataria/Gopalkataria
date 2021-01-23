@@ -21,33 +21,8 @@ export function ContactLinksComponent() {
 		<SectionComponent title='Contact me ' icon='call-sharp'>
 			<ul className='list-group ' id='contact-me'>
 				You can either message me on twitter or send me an Email. I would love to hear you and will
-				surely get back to you within 48 hours.
-				<br />
+				surely get back to you within a week. 
 				<strong>
-					<li className='list-group-item  links '>
-						<div className='twitter'>
-							<ion-icon name='logo-twitter' /> {"  "}
-							<a
-								href='https://twitter.com/GopalKatariaGK'
-								rel='noreferrer'
-								target='_blank'
-								className=' text-primary'>
-								Twitter @GopalKatariaGK
-							</a>
-						</div>
-					</li>
-					<li className='list-group-item links '>
-						<div className='instagram'>
-							<ion-icon name='logo-instagram'></ion-icon> {"  "}
-							<a
-								href='https://www.instagram.com/iam_gopalk/'
-								rel='noreferrer'
-								target='_blank'
-								className=' text-primary'>
-								Instagram @iam_gopalk
-							</a>
-						</div>
-					</li>
 					<li className='list-group-item links  '>
 						<div className='github'>
 							<ion-icon name='logo-github'></ion-icon> {"  "}
