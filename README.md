@@ -14,7 +14,7 @@
 
 
 # Do you wanna chat  ?
-####  Feel free to [contact me.]( https://gopalkataria.web.app/contact),and I love reading casually written E-mails. I would be happy to discuss project ideas and opportunities with you.
+####  Feel free to [contact me. ]( https://gopalkataria.web.app/contact),and I love reading casually written E-mails. I would be happy to discuss project ideas and opportunities with you.
 
 
 
