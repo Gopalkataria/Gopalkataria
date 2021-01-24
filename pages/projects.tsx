@@ -94,13 +94,6 @@ const OtherProjects: Project[] = [
 	// keys are in descending order, Because new projects are added on top
 
 	{
-		uid: 17,
-		title: "Time table",
-		description:
-			"A place to keep your weekly schedule. Made in collaboration with My friend David Yadav",
-		link: "https://david-learns-coding.github.io/Time-table/",
-	},
-	{
 		uid: 16,
 		title: " Physiczard ",
 		description:
@@ -111,7 +104,7 @@ const OtherProjects: Project[] = [
 	{
 		uid: 15,
 		title: " Earth Clock ",
-		description: " An unpredictable world clock made in vanilla javascript. ",
+		description: "Worlds most unpredictable and unreliable clock, but the time it tells is *(usually) correct. Vanilla javascript. ",
 		link: "https://earth-clock.web.app",
 	},
 	{

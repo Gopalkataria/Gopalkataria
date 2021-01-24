@@ -81,42 +81,32 @@ export default function AboutPage() {
 								<b>Gopal Kataria</b>
 							</h1>
 							<h4 className='text-light '>High school student</h4>
+							<h4 className='text-light '>Almost Front End developer</h4>
 							<h4 className='text-light'>Born in 2004</h4>
 						</div>
 					</div>
 				</div>
 
 				<SectionComponent title={"About Me "} icon='person-outline'>
-					<strong>I am a high school student 👨‍🎓 and a self-taught programmer 💻. </strong>
-					While my main focus is web development 🌎, I love trying my hand ✋ at new languages,
-					software and frameworks.
-					<br /> My ultimate goal is to build something transformative for the society using my
+					<strong>I am a high school student and a self-taught programmer. </strong>
+					 My ultimate goal is to build something transformative for the society using my
 					programming skills .
-					<br />
-					<strong className='px-1'>
-						Feel free to
-						<a href='#contact-me' className=' text-primary px-1'>
-							get in touch with me.
-						</a>
-						I am always open to discuss new projects 📂, creative ideas 💡 or opportunities 🎁 to
-						work with you.
-					</strong>
+
+					<br>
+					<br> P.S. I am not a PC/Laptop repair man or a social media account hacker. 
 				</SectionComponent>
 
 				<SectionComponent title='Skills' icon='construct-outline'>
 					<ul>
 						<li className='blink'>
-							Good Knowledge of Front-end languages like CSS, HTML and Javascript
+							Front-end languages like CSS, HTML and Javascript
 						</li>
 						<li className='blink'>
-							Basic Knowledge of Front-end frameworks like React.js, Next.js, Ionic (with React){" "}
+							React.js [ along with  Next.js, Ionic (with React)]{" "}
 						</li>
-						<li className='blink'>Good Knowledge of Python (algorithms, scrap-code, automation)</li>
-						<li className='blink'>Strong base in Mathematics (as a high school student)</li>
+						<li className='blink'>Python (algorithms, scrap-code, automation)</li>
 						<li className='blink'>Firebase hosting and analytics </li>
-						<li className='blink'> Comfortable with Git and Github</li>
-						<li className='blink'>Beginner level expertise in C# and Java </li>
-						<li className='blink'>A talented elocutionist</li>
+						<li className='blink'>Git and Github</li>
 					</ul>
 				</SectionComponent>
 
@@ -174,34 +164,6 @@ export default function AboutPage() {
 					{/* end of projects section cards  */}
 				</div>
 
-				<SectionComponent title='Achievements' icon='trophy-sharp'>
-					<ul>
-						<li className='blink '>
-							Participated in Google's kickstart competition. Solved numerous algorithmic problems
-							for the same.
-						</li>
-						<li className='blink '>Scored 8.0 Band in IELTS academic test at the age of 16. </li>
-						<li className='blink '>An active member of Hack Club community.</li>
-						<li className='blink '>Represented the school in various inter-school competitions.</li>
-						<li className='blink '>
-							Participated in various stage activities in school (Debates, Quizzes, and compèring).
-						</li>
-						<li className='blink '>
-							Secured 188th position out of 3,000 participants in Global Citizen Scholarship
-							entrance exam held on 20th June 2020.
-						</li>
-						<li className='blink '>
-							Helped My friend get his{" "}
-							<a
-								href='https://david-learns-coding.github.io/Time-table/'
-								target='_blank'
-								rel='noreferrer'>
-								first website
-							</a>{" "}
-							working
-						</li>
-					</ul>
-				</SectionComponent>
 
 				<SectionComponent title=' Interests ' icon='heart-circle-sharp'>
 					<InterestComponent title="Building PWA's ">
@@ -213,7 +175,7 @@ export default function AboutPage() {
 					</InterestComponent>
 
 					<InterestComponent title=' Solving algorithmic problems '>
-						Hard programming problems are intrinsically fun to tackle. My main focus is to come up
+						Hard programming problems are intrinsically fun to tackle. I try to come up
 						with creative solutions to rather mundane problems. These patterns can be found
 						everywhere in my code.
 					</InterestComponent>
@@ -221,7 +183,7 @@ export default function AboutPage() {
 					<InterestComponent title=' Tech Enthusiast '>
 						I constantly keep myself updated with upcoming developments in the tech industry. This
 						has made me the de-facto person to reach out for any Tech related advice and assistance
-						amongst my friends and family members.
+						amongst my friends and family members. 
 					</InterestComponent>
 				</SectionComponent>
 

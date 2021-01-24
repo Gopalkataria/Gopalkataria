@@ -20,8 +20,9 @@ export function ContactLinksComponent() {
 	return (
 		<SectionComponent title='Contact me ' icon='call-sharp'>
 			<ul className='list-group ' id='contact-me'>
-				You can either message me on twitter or send me an Email. I would love to hear you and will
-				surely get back to you within a week. 
+				Currently I am not open to accept any new projects [ I am busier than Elon Musk ].
+				If you want to discuss something else, 
+				 Feel free to Email me. I will get back to you within a week or so subject to the topic of your Email.  
 				<strong>
 					<li className='list-group-item links  '>
 						<div className='github'>
