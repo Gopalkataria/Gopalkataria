@@ -92,8 +92,8 @@ export default function AboutPage() {
 					 My ultimate goal is to build something transformative for the society using my
 					programming skills .
 
-					<br>
-					<br> P.S. I am not a PC/Laptop repair man or a social media account hacker. 
+					<br/>
+					<br/> P.S. I am not a PC/Laptop repair man or a social media account hacker. 
 				</SectionComponent>
 
 				<SectionComponent title='Skills' icon='construct-outline'>
