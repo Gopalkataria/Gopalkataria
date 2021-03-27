@@ -8,13 +8,10 @@
 
 # what do I Do ?
 * Websites using Front-end frameworks like React.js, Next.js, Ionic (with React)
-* Make non sophisticated yet powerful algorithms
-* Automate stuff using Powershell and Python
+* Automate stuff using Powershell and Python sometimes Bash
+* Spend time ricing my Ubuntu installation
 * Love Maths ( until now at least )
 
-
-# Do you wanna chat  ?
-####  Feel free to [contact me. ]( https://gopalkataria.web.app/contact),and I love reading casually written E-mails. I would be happy to discuss project ideas and opportunities with you.
 
 
 
