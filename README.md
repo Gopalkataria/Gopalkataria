@@ -4,7 +4,7 @@
 
 # Who am I ?
 
-### **I am a high school student and a self-taught programmer. **
+### **I am a high school student and a self-taught programmer**
 
 # what do I Do ?
 * Websites using Front-end frameworks like React.js, Next.js, Ionic (with React)
