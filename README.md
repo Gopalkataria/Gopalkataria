@@ -13,8 +13,6 @@
 * Love Maths ( until now at least )
 
 
-# contact me ?
-Don't  🙃
 
 
 
