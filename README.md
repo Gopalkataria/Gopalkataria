@@ -9,7 +9,7 @@
 # what do I Do ?
 * Websites using Front-end frameworks like React.js, Next.js, Ionic (with React)
 * Automate stuff using Powershell and Python sometimes Bash
-* Spend a whole lot of time ricing my Manjaro installation
+* Spend a whole lot of time ricing my Arch installation
 * Love Maths ( until now at least )
 
 
