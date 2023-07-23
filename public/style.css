@@ -1,40 +1,53 @@
 #main {
 	display: flex;
 	flex-direction: row;
-	padding: 0px;
+	padding: 10px;
 		padding-top: 80px;
 	flex-wrap: wrap;
-	background-color: pink;
 }
 
+
 #dp {
-	width: 450px;
+	width: 500px;
 	margin: auto;
-	border-radius: 225px;
+	border-radius: 250px;
+		box-shadow: -5px 9px 6px 0px #1D0606;
 	
 }
 
-.box {
-	border: 5px solid black;
-}
 
 .uppertext {
-	font-size: 30px;
+	color: #1D0606;
+		font-family: Indie Flower;
+		font-size: 64px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
 
 }
 .name {
-	font-size: 50px;
-	margin: auto;
-	align-self: center;
+	color: #3C1515;
+		font-family: Merienda;
+		font-size: 128px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -7.68px;
 }
 
 .bottext {
-	font-size: 26px;
+	margin-top: 40px;
+		color: #1D0606;
+		font-family: Indie Flower;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
 }
 
 #box2 {
-	width: 55%;
-		min-width: 450px;
+	width: 45%;
+		min-width: 400px;
 		padding: 0px;
 		margin: auto;
 		padding-top: 30px;
