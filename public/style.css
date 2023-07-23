@@ -1,53 +1,43 @@
 #main {
 	display: flex;
 	flex-direction: row;
-	padding: 12px;
+	padding: 0px;
+		padding-top: 80px;
 	flex-wrap: wrap;
-	color: pink;
+	background-color: pink;
+}
+
+#dp {
+	width: 450px;
+	margin: auto;
+	border-radius: 225px;
+	
 }
 
 .box {
+	border: 5px solid black;
+}
 
-	max-height: 600px;
-	text-align: center;
+.uppertext {
+	font-size: 30px;
+
+}
+.name {
+	font-size: 50px;
 	margin: auto;
-
+	align-self: center;
 }
 
-#box1 {
-	padding: 30px 35px;
-}
-
-@media (max-width : 500px) {
-
-	#dp {
-
-		width: 300px;
-		height: 300px;
-		border-radius: 150px;
-	}
-}
-
-
-#dp {
-
-	width: 500px;
-	height: 500px;
-
-
-	border: 0px solid rgba(255, 209, 240, 0);
-	border-radius: 250px;
-	box-shadow: -5px 9px 6px #1D0606;
-
+.bottext {
+	font-size: 26px;
 }
 
 #box2 {
-	min-width: 350px;
-	color: black;
-	width: 600px;
-	height: 500px;
-	flex-grow: 2;
-	border: 2px solid rgb(0, 0, 0);
+	width: 55%;
+		min-width: 450px;
+		padding: 0px;
+		margin: auto;
+		padding-top: 30px;
 }
 
 body {
