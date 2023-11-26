@@ -1,11 +1,1 @@
-DE is bloat use tmux and lynx
-
-
-
-
-
-
-
-
-
-
+DE is bloat use vim, lynx and tmux.
