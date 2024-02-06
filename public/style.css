@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	padding: 10px;
-		padding-top: 80px;
+	padding-top: 80px;
 	flex-wrap: wrap;
 }
 
@@ -11,52 +11,53 @@
 	width: 500px;
 	margin: auto;
 	border-radius: 250px;
-		box-shadow: -5px 9px 6px 0px #1D0606;
-	
+	box-shadow: -5px 9px 6px 0px #1D0606;
+
 }
 
 
 .uppertext {
 	color: #1D0606;
-		font-family: Indie Flower;
-		font-size: 64px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
+	font-family: Indie Flower;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 
 }
+
 .name {
 	color: #3C1515;
-		font-family: Merienda;
-		font-size: 128px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		letter-spacing: -7.68px;
+	font-family: Merienda;
+	font-size: 128px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -7.68px;
 }
 
 .bottext {
 	margin-top: 40px;
-		color: #1D0606;
-		font-family: Indie Flower;
-		font-size: 28px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
+	color: #1D0606;
+	font-family: Indie Flower;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 
 #box2 {
 	width: 45%;
-		min-width: 400px;
-		padding: 0px;
-		margin: auto;
-		padding-top: 30px;
+	min-width: 400px;
+	padding: 0px;
+	margin: auto;
+	padding-top: 30px;
 }
 
 .projectsbtn {
-	background-color: #85445c;
-	filter: drop-shadow(-5px 9px 6px #1D0606);
-	color: #FABDD3;
+	background-color: #313d1a;
+	filter: drop-shadow(-5px 9px 6px #53661d);
+	color: #eff0d7;
 	margin-top: 30px;
 	text-align: center;
 	font-family: Merienda;
@@ -64,15 +65,26 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	overflow: hidden;
+	margin: 10px ; 
 	width: 246px;
 	height: 58px;
 }
 
 .projecturl {
-	color: #e3ced6;
+	color: #ecdfe4;
+	text-decoration: none ;
 }
+
+.buttonholder {
+	display: flex;
+	flex-direction: row;
+	margin: 10px ; 
+	padding: 10px ;;
+}
+
 body {
 
-	background-color: #cdbfc4;
+	background-color: #cdcec0;
 	height: 100%;
 }
