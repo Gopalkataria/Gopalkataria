@@ -60,12 +60,13 @@
 	color: #eff0d7;
 	margin-top: 30px;
 	text-align: center;
-	font-family: Merienda;
+	font-family: Inter;
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 	overflow: hidden;
+	padding : 5px ;
 	margin: 10px ; 
 	width: 246px;
 	height: 58px;
