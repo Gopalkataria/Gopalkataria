@@ -6,6 +6,9 @@
 	flex-wrap: wrap;
 }
 
+* {
+	font-display: swap;
+}
 
 #dp {
 	width: 500px;
@@ -99,4 +102,8 @@ body {
 
 	background-color: #cde3e9;
 	height: 100%;
+}
+
+html {
+    touch-action: manipulation;
 }
