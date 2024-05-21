@@ -18,7 +18,7 @@
 
 .uppertext {
 	color: #1D0606;
-	font-family: Inter;
+	font-family: Merienda;
 	font-size: 64px;
 	font-style: normal;
 	font-weight: 400;
@@ -39,7 +39,7 @@
 .bottext {
 	margin-top: 40px;
 	color: #1D0606;
-	font-family: Inter;
+	font-family: Merienda;
 	font-size: 28px;
 	font-style: normal;
 	font-weight: 400;
@@ -54,13 +54,16 @@
 	padding-top: 30px;
 }
 
+a {
+	color: #07093b;
+}
+
 .projectsbtn {
-	background-color: #313d1a;
-	filter: drop-shadow(-5px 9px 6px #53661d);
-	color: #eff0d7;
+	background-color: #30470400;
+	color: #212203;
 	margin-top: 30px;
 	text-align: center;
-	font-family: Inter;
+	font-family: Merienda;
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 400;
@@ -70,11 +73,19 @@
 	margin: 10px ; 
 	width: 246px;
 	height: 58px;
+	border : 2px solid #212203 ; 
+	border-radius: 5px ; 
+	transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.projectsbtn:hover {
+	background-color: #212203;
+	color: white ;
+	text-decoration: underline;
 }
 
 .projecturl {
-	color: #ecdfe4;
-	text-decoration: none ;
+	color: inherit;
 }
 
 .buttonholder {
@@ -86,6 +97,6 @@
 
 body {
 
-	background-color: #cdcec0;
+	background-color: #cde3e9;
 	height: 100%;
 }
