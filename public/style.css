@@ -6,6 +6,8 @@
 	flex-wrap: wrap;
 }
 
+
+
 * {
 	font-display: swap;
 }
@@ -31,6 +33,8 @@
 
 .name {
 	color: #3C1515;
+	margin: auto;
+	text-align: center;
 	font-family: Merienda;
 	font-size: 128px;
 	font-style: normal;
@@ -41,7 +45,6 @@
 
 .bottext {
 	margin-top: 40px;
-	padding-left: 20px;
 	color: #1D0606;
 	font-family: Merienda;
 	font-size: 28px;
@@ -51,7 +54,7 @@
 }
 
 #box2 {
-	width: 45%;
+	width: 75%;
 	min-width: 400px;
 	padding: 0px;
 	margin: auto;
@@ -73,18 +76,18 @@ a {
 	font-weight: 400;
 	line-height: normal;
 	overflow: hidden;
-	padding : 5px ;
-	margin: 10px ; 
+	padding: 5px;
+	margin: 10px;
 	width: 246px;
 	height: 58px;
-	border : 2px solid #212203 ; 
-	border-radius: 5px ; 
+	border: 2px solid #212203;
+	border-radius: 5px;
 	transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .projectsbtn:hover {
 	background-color: #212203;
-	color: white ;
+	color: white;
 	text-decoration: underline;
 }
 
@@ -93,10 +96,10 @@ a {
 }
 
 .buttonholder {
-	display: flex;
-	flex-direction: row;
-	margin: 10px ; 
-	padding: 10px ;;
+	display: ruby-text;
+	margin: auto;
+	padding: 10px;
+	width: max-content;
 }
 
 body {
@@ -104,4 +107,3 @@ body {
 	background-color: #cde3e9;
 	height: 100%;
 }
-
