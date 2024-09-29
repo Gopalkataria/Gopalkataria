@@ -96,7 +96,7 @@ a {
 }
 
 .buttonholder {
-	display: ruby-text;
+	display: flex;
 	margin: auto;
 	padding: 10px;
 	width: max-content;
