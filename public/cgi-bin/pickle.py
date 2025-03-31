@@ -6,15 +6,6 @@ import hashlib
 import subprocess
 import cgi
 
-
-def logerr( logfile , errr ):
-    logfile.write(errr)
-    logfile.write("\n")
-    logfile.close()
-    print(errr)
-    sys.exit(1)
-
-
 def load_env(filepath):
     env = {}
     try:
@@ -27,7 +18,7 @@ def load_env(filepath):
     except FileNotFoundError:
         print("Content-Type: text/plain\n")
         print("Error: .env file not found")
-        sys.exit(1)
+        #sys.exit(1)
     return env
 
 # Set up response headers early
@@ -39,23 +30,16 @@ env = load_env(env_path)
 SECRET = env.get("GIT_SYNC_SECRET", "").encode()
 REPO_PATH = env.get("REPO_PATH", "")
 
-# Change to repository directory
-try:
-    os.chdir(REPO_PATH)
-except FileNotFoundError:
-    print(f"Error: Repository path {REPO_PATH} not found")
-
-logfile = open("git-sync.log" , "a")
-logfile.write("log\n")
-
 # Validate required configuration
 if not SECRET or not REPO_PATH:
-    logerr(logfile , "Variables not found")
+    print("Error: Missing required environment variables")
+    #sys.exit(1)
 
 # Read request data
 form = cgi.FieldStorage()
 if "file" not in form:
-    logerr(logfile, "No payload recieved")
+    print("Error: No payload received")
+    #sys.exit(1)
 
 payload = form.getvalue("file", "").encode()
 signature = os.environ.get("HTTP_X_GITHUB_SECRET", "")
@@ -63,15 +47,20 @@ signature = os.environ.get("HTTP_X_GITHUB_SECRET", "")
 # Verify GitHub signature
 calculated_signature = hmac.new(SECRET, payload, hashlib.sha256).hexdigest()
 if not hmac.compare_digest(calculated_signature, signature):
-    logerr(logfile, "Unauthorized request")
+    print("Unauthorized request")
+    #sys.exit(1)
 
-
-
+# Change to repository directory
+try:
+    os.chdir(REPO_PATH)
+except FileNotFoundError:
+    print(f"Error: Repository path {REPO_PATH} not found")
 
 # Pull the latest code
 result = subprocess.run(["git", "pull", "--rebase", "origin", "main"] )
 # Log output
-logfile.write("Process done")
-logfile.close()
+
 
 print(result)
+for key, value in os.environ.items():
+    print(f"{key}: {value}")
