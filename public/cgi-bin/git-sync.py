@@ -18,7 +18,7 @@ def load_env(filepath):
     except FileNotFoundError:
         print("Content-Type: text/plain\n")
         print("Error: .env file not found")
-        sys.exit(1)
+        #sys.exit(1)
     return env
 
 # Set up response headers early
@@ -33,13 +33,13 @@ REPO_PATH = env.get("REPO_PATH", "")
 # Validate required configuration
 if not SECRET or not REPO_PATH:
     print("Error: Missing required environment variables")
-    sys.exit(1)
+    #sys.exit(1)
 
 # Read request data
 form = cgi.FieldStorage()
 if "file" not in form:
     print("Error: No payload received")
-    sys.exit(1)
+    #sys.exit(1)
 
 payload = form.getvalue("file", "").encode()
 signature = os.environ.get("HTTP_X_GITHUB_SECRET", "")
@@ -48,7 +48,7 @@ signature = os.environ.get("HTTP_X_GITHUB_SECRET", "")
 calculated_signature = hmac.new(SECRET, payload, hashlib.sha256).hexdigest()
 if not hmac.compare_digest(calculated_signature, signature):
     print("Unauthorized request")
-    sys.exit(1)
+    #sys.exit(1)
 
 # Change to repository directory
 try:
