@@ -12,7 +12,7 @@ def logerr( logfile , errr ):
     logfile.write("\n")
     logfile.close()
     print(errr)
-    sys.exit(1)
+    # sys.exit(1)
 
 
 def load_env(filepath):
