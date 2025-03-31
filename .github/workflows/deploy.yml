@@ -11,7 +11,4 @@ jobs:
     steps:
       - name: Send Sync Request
         run: |
-          curl -k -X POST https://researchweb.iiit.ac.in/~gopal.kataria/cgi-bin/git-sync.py \
-          -H "Content-Type: application/json" \
-          -H "X-GitHub-Secret: ${{ secrets.GIT_SYNC_SECRET }}" \
-          --data '{"repository": "${{ github.repository }}", "branch": "${{ github.ref }}"}'
+          curl -k -X POST https://researchweb.iiit.ac.in/~gopal.kataria/cgi-bin/git-sync.py 
