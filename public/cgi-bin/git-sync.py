@@ -23,7 +23,7 @@ def load_env(filepath):
         sys.exit(1)
     return env
 
-env = load_env("~/.git-sync.env")
+env = load_env("/research/ug/ug2k23dual/ecd/gopal.kataria/.git-sync.env")
 
 SECRET = env.get("GIT_SYNC_SECRET", "").encode()
 REPO_PATH = env.get("REPO_PATH", "")
