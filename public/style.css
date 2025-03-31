@@ -104,3 +104,9 @@ body {
     background-color: #eeeeee;
     height: 100%;
 }
+
+#footertext {
+    text-align: center;
+    font-family: Merienda;
+    font-size: 22px;
+}
