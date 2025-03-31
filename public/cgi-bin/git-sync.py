@@ -57,7 +57,7 @@ except FileNotFoundError:
     print(f"Error: Repository path {REPO_PATH} not found")
 
 # Pull the latest code
-result = subprocess.run(["git", "pull", "--rebase", "--autostash", "origin", "main"] )
+result = subprocess.run(["git", "pull", "--rebase", "origin", "main"] )
 # Log output
 
 log_path = os.path.join(REPO_PATH, "git-sync.log")
