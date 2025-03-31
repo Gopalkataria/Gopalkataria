@@ -60,12 +60,5 @@ except FileNotFoundError:
 result = subprocess.run(["git", "pull", "--rebase", "origin", "main"] )
 # Log output
 
-log_path = os.path.join(REPO_PATH, "git-sync.log")
-#with open(log_path, "a") as log_file:
- #   log_file.write(f"--- {os.environ.get('REMOTE_ADDR', 'Unknown')} - "
-  #                f"{os.environ.get('REQUEST_METHOD', 'Unknown')} "
-   #               f"{os.environ.get('PATH_INFO', '/')} ---\n")
-    #log_file.write(result.stdout + "\n" + result.stderr + "\n\n")
 
-# Print response
 print(result)
