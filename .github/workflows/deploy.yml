@@ -1,0 +1,17 @@
+name: Auto Sync to ResearchWeb
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Sync Request
+        run: |
+          curl -X POST https://researchweb.iiit.ac.in/~gopal.kataria/cgi-bin/git-sync.py \
+          -H "Content-Type: application/json" \
+          -H "X-GitHub-Secret: ${{ secrets.GIT_SYNC_SECRET }}" \
+          --data '{"repository": "${{ github.repository }}", "branch": "${{ github.ref }}"}'
